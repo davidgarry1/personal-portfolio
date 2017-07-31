@@ -2,7 +2,7 @@
   "name": "David Garry Personal Portfolio",
   "description": "Personal Portfolio of David Garry",
   "repository": "https://github.com/davidgarry1/personal-portfolio/",
-  "logo": "https://github.com/davidgarry1/personal-portfolio/",
+  "logo": "http://www-scf.usc.edu/~dgarry/img/headshot.jpg",
   "keywords": ["node", "express", "dgarry", "davidgarry", "heroku"],
-  "image": "heroku/nodejs"
+  "image": "http://www-scf.usc.edu/~dgarry/img/headshot.jpg"
 }
