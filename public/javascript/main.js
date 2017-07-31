@@ -36,7 +36,7 @@ var maxX = window.innerWidth;
 var maxY = window.innerHeight;
 
 var params = [];
-var i = 250;
+var i = 500;
 while (i--) {
   var circle = create("circle");
   circle.setAttribute("fill", randomColor());
