@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Node.js",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/heroku/node-js-getting-started",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["node", "express", "heroku"],
+  "name": "David Garry Personal Portfolio",
+  "description": "Personal Portfolio of David Garry",
+  "repository": "https://github.com/davidgarry1/personal-portfolio/",
+  "logo": "https://github.com/davidgarry1/personal-portfolio/",
+  "keywords": ["node", "express", "dgarry", "davidgarry", "heroku"],
   "image": "heroku/nodejs"
 }

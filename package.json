@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "dgarry.com",
   "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Personal Portfolio of David Garry",
   "engines": {
     "node": "6.11.1"
   },
@@ -20,12 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https:www.dgarry.herokuapp.com"
   },
   "keywords": [
     "node",
     "heroku",
+    "dgarry",
+    "davidgarry",
     "express"
   ],
-  "license": "MIT"
+  "license": "None"
 }
