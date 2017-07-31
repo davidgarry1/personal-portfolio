@@ -17,7 +17,7 @@ var reactiveCircles = function() {
     map.set("el", [el]);
     map.set("cx", [el.getAttribute("cx"), randomInt(0, maxX)]);
     map.set("cy", [el.getAttribute("cy"), randomInt(0, maxY)]);
-    map.set("duration", 3000);
+    map.set("duration", 1000);
     map.set("easing", "easeOutElastic");
     animate(map);
   });
