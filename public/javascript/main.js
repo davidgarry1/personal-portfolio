@@ -38,7 +38,7 @@ var maxY = window.innerHeight;
 var params = [];
 var i = 250;
 while (i--) {
-  var circle = create("square");
+  var circle = create("circle");
   circle.setAttribute("fill", randomColor());
   svg.appendChild(circle);
 
