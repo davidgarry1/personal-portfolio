@@ -17,7 +17,7 @@ var reactiveCircles = function() {
     map.set("el", [el]);
     map.set("cx", [el.getAttribute("cx"), randomInt(0, maxX)]);
     map.set("cy", [el.getAttribute("cy"), randomInt(0, maxY)]);
-    map.set("duration", 1000);
+    map.set("duration", 1500);
     map.set("easing", "easeOutElastic");
     animate(map);
   });
@@ -47,8 +47,8 @@ while (i--) {
   map.set("cx", [maxX/2, randomInt(0, maxX)]);
   map.set("cy", [maxY/2, randomInt(0, maxY)]);
   map.set("r", [0, randomInt(4, 20)]);
-  map.set("delay", 0);
-  map.set("duration", 1000);
+  map.set("delay", i*2);
+  map.set("duration", 4500);
   map.set("easing", "easeOutElastic");
   if (i < 1) map.set("complete", reactiveCircles);
   params.push(map);
