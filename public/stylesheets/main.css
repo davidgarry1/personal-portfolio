@@ -14,5 +14,8 @@ body {
 }
 
 .content {
-  font-size: 15em;
+  position: relative;
+  font-size: 17em;
+  z-index: 2;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
