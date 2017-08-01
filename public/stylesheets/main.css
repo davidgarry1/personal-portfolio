@@ -9,4 +9,10 @@ svg {
 
 body {
     background: black;
+    color: white;
+    font-family: 'Megrim', cursive;
+}
+
+.content {
+  font-size: 15em;
 }
