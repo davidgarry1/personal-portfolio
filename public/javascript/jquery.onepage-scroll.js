@@ -17,7 +17,7 @@
 !function($){
 
   var defaults = {
-  	dotstyle: "fillup",
+  	dotstyle: "circledraw",
     sectionContainer: "section",
     easing: "ease",
     animationTime: 1000,
@@ -409,4 +409,3 @@
 
 
 }(window.jQuery);
-
