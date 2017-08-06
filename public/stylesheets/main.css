@@ -12,7 +12,10 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+.footer .contact-icon {
+    height: 2em;
+    width: 2em;
+}
 .box {
   display: flex;
   flex-flow: column;
@@ -37,9 +40,9 @@ body {
 .box .row.footer {
   text-align: center;
   flex: 0 1 auto;
-  padding: 15px;
-  margin: 15px;
-  font-size: 1.5em;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
