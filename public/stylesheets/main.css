@@ -65,8 +65,7 @@ body {
 .box .row.footer {
   text-align: center;
   flex: 0 1 auto;
-  padding: 5px;
-  margin: 5px;
+  margin: 7px;
   font-size: 1.3em;
   font-weight: bold;
 }
