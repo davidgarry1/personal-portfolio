@@ -17,8 +17,8 @@ body {
     width: 2em;
 }
 .sidebar {
-  height: 100%;
-  width: 15px;
+  height: auto;
+  width: auto;
   background-color: grey;
 }
 .box {
