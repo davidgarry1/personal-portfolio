@@ -16,6 +16,10 @@ body {
     height: 2em;
     width: 2em;
 }
+.footer .contact-icon:hover {
+    color: grey;
+    cursor: pointer;
+}
 .sidebar {
   position: relative;
   top: 0px;
