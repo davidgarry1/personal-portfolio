@@ -16,15 +16,13 @@ body {
     height: 2em;
     width: 2em;
 }
-.sidebar {
+.sidebar ul {
   position: relative;
   top: 0px;
   left: 0px;
   height: auto;
   width: auto;
   font-size: 1.2em;
-}
-.sidebar ul {
   list-style-position: outside;
   list-style-type: none;
   margin: 0px;
@@ -63,6 +61,7 @@ body {
   padding: 15px;
   margin: 15px;
   position: relative;
+  background-color: lightgrey;
 }
 .box .row.footer {
   text-align: center;
@@ -73,10 +72,7 @@ body {
   font-weight: bold;
 }
 .inner-body {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  background-color: lightgrey;
+  background-color: lightyellow;
   text-align: center;
 }
 .title {
