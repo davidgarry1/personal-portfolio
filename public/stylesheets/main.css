@@ -65,6 +65,7 @@ body {
   margin: 15px;
   position: relative;
   background-color: lightgrey;
+  overflow: scroll;
 }
 .box .row.footer {
   text-align: center;
@@ -158,13 +159,11 @@ body, html {
 .inner-body {
   display: block;
   padding: 0;
-  max-height: 100%;
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
   text-align: center;
   margin: 15px;
-  overflow: auto;
 }
 
 .inner-body section {
