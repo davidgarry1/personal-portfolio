@@ -19,7 +19,7 @@ body {
   height: 100%;
 }
 .box .row {
-  border: 1px dotted grey;
+  
 }
 .box .row.header {
   flex: 0 1 auto;
@@ -35,7 +35,10 @@ body {
   margin: 15px;
 }
 .box .row.footer {
+  text-align: center;
   flex: 0 1 auto;
+  padding: 15px;
+  margin: 15px;
 }
 
 .title {
