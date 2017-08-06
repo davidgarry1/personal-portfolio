@@ -16,7 +16,7 @@ body {
     height: 2em;
     width: 2em;
 }
-.sidebar ul {
+ul .sidebar {
   position: relative;
   top: 0px;
   left: 0px;
@@ -29,15 +29,15 @@ body {
   padding: 0px;
   margin-right: 5px;
 }
-.sidebar ul li {
+ul .sidebar li {
   padding: 0px;
   padding-bottom:3px;
   margin: 0px;
 }
-.sidebar ul li::before {
+ul .sidebar li::before {
   content: "\00BB";
 }
-.sidebar ul li:hover {
+ul .sidebar li:hover {
   color: grey;
 }
 .box {
