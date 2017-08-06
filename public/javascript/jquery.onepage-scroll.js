@@ -123,7 +123,7 @@
           return
         }
 
-      }else {
+      } else {
         pos = (index * 100) * -1;
       }
       if (typeof settings.beforeMove == 'function') settings.beforeMove( next.data("index"));
