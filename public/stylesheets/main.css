@@ -17,9 +17,15 @@ body {
     width: 2em;
 }
 .sidebar {
+  position: relative;
+  top: 0px;
+  left: 0px;
   height: auto;
   width: auto;
-  background-color: grey;
+}
+.sidebar ul {
+  list-style-position: outside;
+  list-style-type: none;
 }
 .sidebar ul li::before {
   content: "\00BB";
