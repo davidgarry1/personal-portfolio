@@ -18,3 +18,12 @@ setTimeout(function() {
     div.childNodes[i].style.opacity = 1;
   }
 }, 0);
+
+$(document).ready(function(){
+      $(".inner-body").onepage_scroll({
+        dotstyle: "drawcircle",
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+});
