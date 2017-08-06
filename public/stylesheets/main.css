@@ -32,16 +32,12 @@ body {
 .box .row.content {
   flex: 1 1 auto;
   background-color: red;
+  border: 2px solid green;
+  padding: 2px;
+  margin: 2px;
 }
 .box .row.footer {
   flex: 0 1 40px;
-}
-
-.content {
-  background: red;
-  height: fill;
-  width: 100%;
-  border: 2px solid green;
 }
 
 .title {
