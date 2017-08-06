@@ -171,6 +171,8 @@ body, html {
   background-color: blue;
   text-overflow: wrap;
   max-height: 100%;
+  max-width: 100%;
+  margin: 15px;
   height: auto;
   overflow: hidden;
 }
