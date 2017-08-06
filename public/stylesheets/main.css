@@ -21,6 +21,13 @@ body {
   width: auto;
   background-color: grey;
 }
+.sidebar ul li::before {
+  content: "\00BB";
+}
+.sidebar ul li:hover {
+  color: grey;
+}
+
 .box {
   display: flex;
   flex-flow: column;
