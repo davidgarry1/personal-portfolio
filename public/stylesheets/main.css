@@ -8,6 +8,13 @@ body {
     padding: 0px;
 }
 
+.content {
+  background: red;
+  height: 100%;
+  width: 100%;
+  border: 2px solid green;
+}
+
 .title {
   text-align: center;
   font-size: 9vw;
