@@ -71,9 +71,12 @@ body {
   font-weight: bold;
 }
 .inner-body {
-  background-color: lightyellow;
   text-align: center;
   margin: 15px;
+}
+.intro-animation {
+  text-align: left;
+  font-size: 3em;
 }
 .title {
   text-align: center;
