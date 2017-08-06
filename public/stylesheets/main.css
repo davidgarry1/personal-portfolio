@@ -72,6 +72,7 @@ body {
 .inner-body {
   text-align: center;
   margin: 15px;
+  overflow: auto;
 }
 .intro-animation {
   text-align: left;
@@ -155,7 +156,7 @@ body, html {
   overflow: hidden;
 }
 
-.inline-body {
+.inner-body {
   display: block;
   padding: 0;
   width: 100%;
@@ -163,6 +164,13 @@ body, html {
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
+}
+
+.inner-body section {
+  text-overflow: wrap;
+  max-height: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .onepage-wrapper {
