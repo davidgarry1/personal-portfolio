@@ -74,6 +74,8 @@ body {
 }
 .inner-body {
   display: inline-block;
+  background-color: lightgrey;
+  text-align: center;
 }
 .title {
   text-align: center;
