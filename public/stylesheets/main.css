@@ -72,7 +72,9 @@ body {
   font-size: 1.3em;
   font-weight: bold;
 }
-
+.inner-body {
+  display: inline-block;
+}
 .title {
   text-align: center;
   font-size: 7vw;
