@@ -1,6 +1,7 @@
 html {
     height: 100%;
     width: 100%;
+    margin: 0
 }
 body {
     background: white;
@@ -12,9 +13,32 @@ body {
     padding: 0px;
 }
 
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.box .row {
+  border: 1px dotted grey;
+}
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+}
+.box .row.content {
+  flex: 1 1 auto;
+}
+.box .row.footer {
+  flex: 0 1 40px;
+}
+
 .content {
   background: red;
-  height: 100%;
+  height: fill;
   width: 100%;
   border: 2px solid green;
 }
