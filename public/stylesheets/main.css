@@ -22,10 +22,19 @@ body {
   left: 0px;
   height: auto;
   width: auto;
+  font-size: 1.2em;
 }
 .sidebar ul {
   list-style-position: outside;
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 5px;
+}
+.sidebar ul li {
+  padding: 0px;
+  padding-bottom:3px;
+  margin: 0px;
 }
 .sidebar ul li::before {
   content: "\00BB";
@@ -33,7 +42,6 @@ body {
 .sidebar ul li:hover {
   color: grey;
 }
-
 .box {
   display: flex;
   flex-flow: column;
@@ -54,6 +62,7 @@ body {
   flex: 1 1 auto;
   padding: 15px;
   margin: 15px;
+  position: relative;
 }
 .box .row.footer {
   text-align: center;
