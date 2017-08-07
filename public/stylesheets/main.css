@@ -41,6 +41,15 @@ body {
   height: 9em;
   border-radius: 4.5em;
 }
+.section-center a {
+  color: inherit;
+  text-decoration: none;
+}
+.section-center a:hover {
+  color: darkgrey;
+  position: relative;
+  top: -2px;
+}
 .sidebar li {
   padding: 0px;
   padding-bottom:3px;
