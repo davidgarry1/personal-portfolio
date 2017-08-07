@@ -18,9 +18,14 @@
   animation-delay: 3s;
 }
 
-.animated.delayed2s {
+.animated.delayed1o5s {
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
+}
+
+.animated.delayed1s {
+  animation-duration: 1s;
+  animation-delay: 1s;
 }
 
 .animated.infinite {
