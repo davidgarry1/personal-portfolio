@@ -108,11 +108,14 @@ body {
 }
 
 .svg-wrapper {
-  margin-top: 6em;
-  margin: 0px;
   height: 3em;
+	margin: 0 auto;
   width: 320px;
   text-align: center;
+}
+
+.svg-wrapper .animated {
+  margin-top: 6em;
 }
 
 .shape {
