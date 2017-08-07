@@ -26,7 +26,7 @@ $("document").ready(function(){
   $("#abouttext").click(function(){
       swap("#about","#experience");
   });
-  $("#expereincetext").click(function(){
+  $("#experiencetext").click(function(){
       swap("#experience","#projects");
   });
   $("#projectstext").click(function(){
