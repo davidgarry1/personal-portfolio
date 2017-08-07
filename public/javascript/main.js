@@ -1,3 +1,5 @@
+history.pushState({urlPath:'/'},"",'/');
+
 var div = document.getElementById('fadetitle'),
     letters = div.textContent.split('');
 
@@ -25,8 +27,8 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
-  history.pushState({urlPath:'/'},"",'/');
   preloadImage("../stand.jpg");
+  
   $("#introtext").click(function(){
       swap("#intro","#about","../stand.jpg");
       preloadImage("../flame.jpg");
