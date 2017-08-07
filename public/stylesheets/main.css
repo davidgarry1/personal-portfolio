@@ -41,6 +41,7 @@ body {
   display: inline-block;
   margin: 15px;
   vertical-align: bottom;
+  width: 40%;
 }
 .section-center .experience-photo-large {
   height: 5em;
