@@ -31,17 +31,17 @@ function preloadImage(e){
 
 $("document").ready(function(){
   $("#fadetitle").css("background-image","url(../black.jpg)");
-  preloadImage("../stand.jpg");
+  preloadImage("../glow.jpg");
   
   $("#introtext").click(function(){
-      swap("#intro","#about","../stand.jpg");
-      preloadImage("../flame.jpg");
+      swap("#intro","#about","../glow.jpg");
+      preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
-      preloadImage("../glow.jpg");
+      preloadImage("../stand.jpg");
   });
   
   $("#abouttext").click(function(){
-      swap("#about","#experience","../flame.jpg");
+      swap("#about","#experience","../sky.jpg");
      
   });
   
@@ -51,7 +51,7 @@ $("document").ready(function(){
   });
   
   $("#projectstext").click(function(){
-      swap("#projects","#resume","../glow.jpg");
+      swap("#projects","#resume","../stand.jpg");
 
   });
   $("#resumetext").click(function(){
