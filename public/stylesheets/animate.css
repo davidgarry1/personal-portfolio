@@ -27,6 +27,14 @@
   animation-duration: 1s;
   animation-delay: 1s;
 }
+.animated.delayedo5s {
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+}
+.animated.delayedo3s {
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+}
 
 .animated.infinite {
   animation-iteration-count: infinite;
