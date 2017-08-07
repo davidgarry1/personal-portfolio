@@ -39,20 +39,17 @@ $("document").ready(function(){
       preloadImage("../hexed.jpg");
       preloadImage("../glow.jpg");
   });
-  
   $("#abouttext").click(function(){
       swap("#about","#experience","../hexed.jpg");
      
   });
-  
   $("#experiencetext").click(function(){
       swap("#experience","#projects","../glow.jpg");
-      
+      preloadImage("../dg.jpg");
+      $("#dg").attr("src","../dg.jpg");
   });
-  
   $("#projectstext").click(function(){
       swap("#projects","#resume","../sky.jpg");
-
   });
   $("#resumetext").click(function(){
       swap("#resume","#intro","../black.jpg");
