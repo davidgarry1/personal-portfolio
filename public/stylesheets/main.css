@@ -33,6 +33,14 @@ body {
   padding: 0px;
   margin-right: 5px;
 }
+.section-center {
+  text-align: center;
+  font-size: 1.2em;
+}
+.section-center .headshot {
+  height: 3em;
+  border-radius: 1.5em;
+}
 .sidebar li {
   padding: 0px;
   padding-bottom:3px;
