@@ -19,7 +19,9 @@ setTimeout(function() {
   }
 }, 0);
 
-$("#pgonetext").click(function(){
-  $("#intro").fadeOut(300);
-  $("#about").fadeIn(300);
+$("document").ready(function(){
+  $("#pgonetext").click(function(){
+    $("#intro").fadeOut(300);
+    $("#about").fadeIn(300);
+  });
 });
