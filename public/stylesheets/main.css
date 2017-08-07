@@ -137,6 +137,10 @@ body {
   -moz-transition: background-image 1s ease-in-out;
   -ms-transition: background-image 1s ease-in-out;
   transition: background-image 1s ease-in-out;
+  -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center bottom;
