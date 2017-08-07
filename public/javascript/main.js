@@ -18,3 +18,8 @@ setTimeout(function() {
     div.childNodes[i].style.opacity = 1;
   }
 }, 0);
+
+$("#pgonetext").click(function(){
+  $("#intro").fadeOut(300);
+  $("#about").delay(50).fadeIn(250);
+});

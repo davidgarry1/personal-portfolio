@@ -122,6 +122,10 @@ body {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 .text {
   color: #fff;
   font-size: 2em;
