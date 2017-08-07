@@ -113,13 +113,13 @@ body {
 	margin: 0 auto;
   width: 320px;
   text-align: center;
-  cursor: pointer;
 }
 
 .shape {
   fill: transparent;
   stroke-width: 0px;
   stroke: #fff;
+  cursor: pointer;
 }
 
 .text {
