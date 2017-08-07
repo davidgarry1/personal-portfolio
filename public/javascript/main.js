@@ -21,9 +21,12 @@ setTimeout(function() {
   }
 }, 0);
 
+var images = [];
+var i = 0;
 function preloadImage(e){
-    img1 = new Image();
-    img1.src = e;
+    img = new Image();
+    img.src = e;
+    images[i++] = img;
 }
 
 $("document").ready(function(){
