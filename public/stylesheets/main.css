@@ -137,7 +137,7 @@ body {
   0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
-    stroke-width: 4px;
+    stroke-width: 0px;
   }
   100% {
     stroke-dasharray: 760;
