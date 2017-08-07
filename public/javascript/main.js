@@ -19,23 +19,29 @@ setTimeout(function() {
   }
 }, 0);
 
+function preloadImage(e){
+    img1 = new Image();
+    img1.src = e;
+}
+
 $("document").ready(function(){
   history.pushState({urlPath:'/'},"",'/');
+  preloadImage("../stand.jpg");
   $("#introtext").click(function(){
-      swap("#intro","#about","");
-
+      swap("#intro","#about","../stand.jpg");
+      preloadImage("../flame.jpg");
   });
+  
   $("#abouttext").click(function(){
-      swap("#about","#experience","");
-
-      //Preload image
-      img1 = new Image();
-      img1.src = "../glow.jpg";
+      swap("#about","#experience","../flame.jpg");
+      preloadImage("../hexed.jpg");
   });
+  
   $("#experiencetext").click(function(){
-      swap("#experience","#projects","");
-
+      swap("#experience","#projects","../hexed.jpg");
+      preloadImage("../glow.jpg");
   });
+  
   $("#projectstext").click(function(){
       swap("#projects","#resume","../glow.jpg");
 
