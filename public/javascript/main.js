@@ -20,7 +20,9 @@ setTimeout(function() {
 }, 0);
 
 $("document").ready(function(){
+  console.log("ready");
   $("#pgonetext").click(function(){
+    console.log("click");
     $("#intro").fadeOut(300);
     $("#about").fadeIn(300);
   });
