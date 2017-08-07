@@ -129,6 +129,8 @@ body {
   cursor: pointer;
   text-decoration: overline;
   text-decoration-style: wavy;
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 3s;
 }
 
 .inner-body {
