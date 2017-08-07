@@ -21,10 +21,10 @@ setTimeout(function() {
 
 $("document").ready(function(){
   $("#introtext").click(function(){
-      swap("#intro","#about","blue");
+      swap("#intro","#about","purple");
   });
   $("#abouttext").click(function(){
-      swap("#about","#experience","green");
+      swap("#about","#experience","blue");
   });
   $("#experiencetext").click(function(){
       swap("#experience","#projects","red");
