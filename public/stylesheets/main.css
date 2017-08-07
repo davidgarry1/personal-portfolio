@@ -40,6 +40,7 @@ body {
 .section-center .photo-container {
   display: inline-block;
   margin: 15px;
+  vertical-align: bottom;
 }
 .section-center .experience-photo-large {
   height: 5em;
