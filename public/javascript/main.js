@@ -31,27 +31,27 @@ function preloadImage(e){
 
 $("document").ready(function(){
   $("#fadetitle").css("background-image","url(../black.jpg)");
-  preloadImage("../glow.jpg");
+  preloadImage("../rock.jpg");
   
   $("#introtext").click(function(){
-      swap("#intro","#about","../glow.jpg");
+      swap("#intro","#about","../rock.jpg");
       preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
-      preloadImage("../rock.jpg");
+      preloadImage("../glow.jpg");
   });
   
   $("#abouttext").click(function(){
-      swap("#about","#experience","../sky.jpg");
+      swap("#about","#experience","../hexed.jpg");
      
   });
   
   $("#experiencetext").click(function(){
-      swap("#experience","#projects","../hexed.jpg");
+      swap("#experience","#projects","../glow.jpg");
       
   });
   
   $("#projectstext").click(function(){
-      swap("#projects","#resume","../rock.jpg");
+      swap("#projects","#resume","../sky.jpg");
 
   });
   $("#resumetext").click(function(){
