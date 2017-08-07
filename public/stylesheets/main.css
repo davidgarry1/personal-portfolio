@@ -111,6 +111,7 @@ body {
   height: 3em;
 	margin: 0 auto;
   width: 320px;
+  text-align: center;
 }
 
 .shape {
@@ -126,7 +127,6 @@ body {
   font-size: 2em;
   position: relative;
   top: -40px;
-  left: -7px;
 }
 
 @keyframes draw {
