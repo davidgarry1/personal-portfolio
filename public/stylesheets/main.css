@@ -132,13 +132,11 @@ body {
 
 .title-text {
   background-color: black;
-  transition: background-image 2s ease;
-  -webkit-transition: background-image 2s ease;
-  -moz-transition: background-image 2s ease;
-  -ms-transition: background-image 2s ease;
-  transition: background-color 2s ease;
-  -webkit-transition: background-color 2s ease;
   background-image: url('');
+  -webkit-transition: background-image 1s ease-in-out;
+  -moz-transition: background-image 1s ease-in-out;
+  -ms-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center bottom;
