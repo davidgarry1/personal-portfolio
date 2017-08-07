@@ -20,20 +20,26 @@ setTimeout(function() {
 }, 0);
 
 $("document").ready(function(){
+  history.pushState({urlPath:'/'},"",'/');
   $("#introtext").click(function(){
       swap("#intro","#about","");
+      history.pushState({urlPath:'/'},"",'/about');
   });
   $("#abouttext").click(function(){
       swap("#about","#experience","");
+      history.pushState({urlPath:'/'},"",'/experience');
   });
   $("#experiencetext").click(function(){
       swap("#experience","#projects","");
+      history.pushState({urlPath:'/'},"",'/projects');
   });
   $("#projectstext").click(function(){
       swap("#projects","#resume","../glow.jpg");
+      history.pushState({urlPath:'/'},"",'/thanks');
   });
   $("#resumetext").click(function(){
       swap("#resume","#intro","");
+      history.pushState({urlPath:'/'},"",'/');
   });
 });
 
