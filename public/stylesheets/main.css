@@ -37,6 +37,10 @@ body {
   text-align: center;
   font-size: 1.4em;
 }
+.section-center .experience-photo{
+  height: 5em;
+  max-width: 15em;
+}
 .section-center .headshot {
   height: 9em;
   border-radius: 4.5em;
@@ -123,6 +127,8 @@ body {
   padding-right: 0.2em;
   font-family: 'Montserrat', sans-serif;
 }
+
+
 
 .svg-wrapper {
   height: 3em;
