@@ -18,6 +18,11 @@
   animation-delay: 3s;
 }
 
+.animated.delayed2s {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }
