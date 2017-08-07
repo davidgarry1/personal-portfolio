@@ -37,7 +37,7 @@ $("document").ready(function(){
       swap("#intro","#about","../glow.jpg");
       preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
-      preloadImage("../stand.jpg");
+      preloadImage("../rock.jpg");
   });
   
   $("#abouttext").click(function(){
@@ -51,7 +51,7 @@ $("document").ready(function(){
   });
   
   $("#projectstext").click(function(){
-      swap("#projects","#resume","../stand.jpg");
+      swap("#projects","#resume","../rock.jpg");
 
   });
   $("#resumetext").click(function(){
