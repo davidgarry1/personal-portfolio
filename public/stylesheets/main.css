@@ -141,7 +141,7 @@ body {
   transition: background-image 1s ease-in-out;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
   -o-background-size: cover;
   padding-top: 0.4em;
