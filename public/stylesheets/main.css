@@ -117,7 +117,7 @@ body {
 
 .shape {
   background-color: black;
-  color: white;
+  color: black;
   stroke-width: 0px;
   stroke: black;
   cursor: pointer;
@@ -128,6 +128,7 @@ body {
 }
 
 .text {
+  color: white;
   font-size: 2em;
   position: relative;
   top: -40px;
@@ -140,11 +141,13 @@ body {
 
 @keyframes draw {
   0% {
+    stroke: black;
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 0px;
   }
   100% {
+    stroke: black;
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
     stroke-width: 5px;
@@ -155,5 +158,9 @@ body {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
   background-color: white;
+  color: white;
+}
+
+.svg-wrapper:hover .text {
   color: black;
 }
