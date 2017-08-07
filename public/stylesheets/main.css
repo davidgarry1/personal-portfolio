@@ -118,7 +118,7 @@ body {
 .shape {
   background-color: black;
   stroke-width: 0px;
-  stroke: #fff;
+  stroke: lightgrey;
   cursor: pointer;
 }
 
