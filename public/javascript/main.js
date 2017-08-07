@@ -20,8 +20,24 @@ setTimeout(function() {
 }, 0);
 
 $("document").ready(function(){
-  $("#pgonetext").click(function(){
-    $("#intro").fadeOut(250);
-    $("#about").delay(250).fadeIn(250);
+  $("#introtext").click(function(){
+      swap("#intro","#about");
+  });
+  $("#abouttext").click(function(){
+      swap("#about","#experience");
+  });
+  $("#expereincetext").click(function(){
+      swap("#experience","#projects");
+  });
+  $("#projectstext").click(function(){
+      swap("#projects","#resume");
+  });
+  $("#resumetext").click(function(){
+      swap("#resume","#intro");
   });
 });
+
+function swap(a,b){
+  $(a).fadeOut(250);
+  $(b).delay(250).fadeIn(250);
+}
