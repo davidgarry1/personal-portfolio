@@ -27,6 +27,7 @@ body {
   font-size: 1.4em;
   overflow-x: hidden;
 }
+
 .section-center .photo-container {
   display: inline-block;
   margin: 15px;
@@ -34,7 +35,13 @@ body {
   width: 40%;
   overflow: hidden;
 }
+.section-center .standalone-image {
+    width: 40%;
+}
 @media(max-width: 600px){
+   .section-center .standalone-image {
+      width: 90%;
+   }
   .section-center .photo-container {
     width: 90%;
   }
