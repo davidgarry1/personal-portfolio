@@ -55,7 +55,7 @@ $("document").ready(function(){
 
   });
   $("#resumetext").click(function(){
-      swap("#resume","#intro","");
+      swap("#resume","#intro","../black.jpg");
 
   });
 });
