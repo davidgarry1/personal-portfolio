@@ -113,6 +113,8 @@ body {
 	margin: 0 auto;
   width: 320px;
   text-align: center;
+  -vendor-animation-duration: 2s;
+  -vendor-animation-delay: 3s;
 }
 
 .shape {
@@ -128,8 +130,6 @@ body {
   position: relative;
   top: -40px;
   cursor: pointer;
-  -vendor-animation-duration: 2s;
-  -vendor-animation-delay: 3s;
 }
 
 .inner-body {
