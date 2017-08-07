@@ -40,5 +40,5 @@ $("document").ready(function(){
 function swap(a,b,c){
   $(a).fadeOut(250);
   $(b).delay(250).fadeIn(250);
-  $("#fadetitle").css("background-image",url(c));
+  $("#fadetitle").css("background-image","url("+c+")");
 }
