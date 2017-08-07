@@ -30,6 +30,7 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
+  $("#fadetitle").css("background-image","url(../black.jpq)");
   preloadImage("../stand.jpg");
   
   $("#introtext").click(function(){
