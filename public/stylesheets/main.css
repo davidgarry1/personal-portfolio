@@ -110,9 +110,6 @@ body {
 .svg-wrapper {
   height: 3em;
 	margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   width: 320px;
 }
 
@@ -120,27 +117,28 @@ body {
   fill: transparent;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke-width: 8px;
-  stroke: #000;
+  stroke-width: 4px;
+  stroke: #fff;
 }
 
 .text {
-  color: #fff;
+  color: #000;
   font-size: 2em;
   position: relative;
-  top: 0.2em;
+  top: -40px;
+  left: -7px;
 }
 
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
-    stroke-width: 8px;
+    stroke-width: 4px;
   }
   100% {
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
-    stroke-width: 2px;
+    stroke-width: 4px;
   }
 }
 
