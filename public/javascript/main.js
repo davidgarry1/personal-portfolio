@@ -21,7 +21,7 @@ setTimeout(function() {
 
 $("document").ready(function(){
   $("#introtext").click(function(){
-      swap("#intro","#about","purple");
+      swap("#intro","#about","red");
   });
   $("#abouttext").click(function(){
       swap("#about","#experience","blue");
@@ -40,5 +40,5 @@ $("document").ready(function(){
 function swap(a,b,c){
   $(a).fadeOut(250);
   $(b).delay(250).fadeIn(250);
-  $("#fadetitle").css("background-color",c);
+  //$("#fadetitle").css("background-color",c);
 }
