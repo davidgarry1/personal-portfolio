@@ -40,6 +40,10 @@ body {
     margin-bottom: 0.5em;
   }
 }
+.section-center iframe {
+  height: 90%;
+  width: 90%;
+}
 .section-center .experience-photo-large {
   height: 5em;
   max-width: 90%;
