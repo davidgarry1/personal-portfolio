@@ -9,30 +9,30 @@
  */
 
 .animated {
-  animation-duration: 1s;
+  animation-duration: .7s;
   animation-fill-mode: both;
 }
 
 .animated.delayed3s {
-  animation-duration: 1s;
+  animation-duration: .7s;
   animation-delay: 3s;
 }
 
 .animated.delayed1o5s {
-  animation-duration: 1s;
+  animation-duration: .7s;
   animation-delay: 1.5s;
 }
 
 .animated.delayed1s {
-  animation-duration: 1s;
+  animation-duration: .7s;
   animation-delay: 1s;
 }
 .animated.delayedo5s {
-  animation-duration: 0.5s;
+  animation-duration: .7s;
   animation-delay: 0.5s;
 }
 .animated.delayedo3s {
-  animation-duration: 0.3s;
+  animation-duration: .7s;
   animation-delay: 0.3s;
 }
 
