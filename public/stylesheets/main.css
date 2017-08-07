@@ -136,16 +136,12 @@ body {
   -webkit-transition: background-image 1s ease-in-out;
   -moz-transition: background-image 1s ease-in-out;
   -ms-transition: background-image 1s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   transition: background-image 1s ease-in-out;
-  -webkit-transition: background-color 1s ease-in-out;
-  -moz-transition: background-color 1s ease-in-out;
-  -ms-transition: background-color 1s ease-in-out;
-  transition: background-color 1s ease-in-out;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   padding-top: 0.4em;
