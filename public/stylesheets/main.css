@@ -101,7 +101,6 @@ body {
   background-color: black;
   transition: background-color 0.5s ease;
   -webkit-transition: background-color 0.5s ease;
-  background-color: red;
   background-image: url('');
   background-repeat: no-repeat;
   background-attachment: scroll;
