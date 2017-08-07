@@ -17,8 +17,8 @@ body {
     width: 1.8em;
 }
 .footer .contact-icon:hover {
-    color: grey;
-    cursor: pointer;
+  position: relative;
+  top: -5px;
 }
 .sidebar {
   position: relative;
