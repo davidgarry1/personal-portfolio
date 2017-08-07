@@ -63,8 +63,7 @@ $("document").ready(function(){
 function swap(a,b,c){
   $("#fadetitle").css("background-image","url("+c+")");
   $(a).fadeOut(250, function() {
-        $("#dyno").scrollTop(0, function() {
-            $(b).fadeIn(250);
-        });
+        $("#dyno").scrollTop(0);
+        $(b).fadeIn(250);
     });
 }
