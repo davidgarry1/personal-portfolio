@@ -43,6 +43,11 @@ body {
   vertical-align: bottom;
   width: 40%;
 }
+@media(max-width: 600px){
+  .section-center .photo-container {
+    width: 100%;
+  }
+}
 .section-center .experience-photo-large {
   height: 5em;
   max-width: 90%;
