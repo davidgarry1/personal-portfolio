@@ -35,10 +35,10 @@ body {
 }
 .section-center {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .section-center .headshot {
-  height: 3em;
+  height: 6em;
   border-radius: 1.5em;
 }
 .sidebar li {
