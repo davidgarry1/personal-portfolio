@@ -109,13 +109,12 @@ body {
 
 .svg-wrapper {
   height: 3em;
-	margin: 0 auto;
+  margin-top: 6em;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
   width: 320px;
   text-align: center;
-}
-
-.svg-wrapper .animated {
-  margin-top: 6em;
 }
 
 .shape {
