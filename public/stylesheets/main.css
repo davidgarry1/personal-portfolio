@@ -113,8 +113,6 @@ body {
 	margin: 0 auto;
   width: 320px;
   text-align: center;
-  -vendor-animation-duration: 2s;
-  -vendor-animation-delay: 3s;
 }
 
 .shape {
