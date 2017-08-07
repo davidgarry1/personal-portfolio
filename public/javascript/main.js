@@ -21,5 +21,5 @@ setTimeout(function() {
 
 $("#pgonetext").click(function(){
   $("#intro").fadeOut(300);
-  $("#about").delay(50).fadeIn(250);
+  $("#about").fadeIn(300);
 });
