@@ -30,22 +30,24 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
-  $("#fadetitle").css("background-image","url(../black.jpq)");
+  $("#fadetitle").css("background-image","url(../black.jpg)");
   preloadImage("../stand.jpg");
   
   $("#introtext").click(function(){
       swap("#intro","#about","../stand.jpg");
       preloadImage("../flame.jpg");
+      preloadImage("../hexed.jpg");
+      preloadImage("../glow.jpg");
   });
   
   $("#abouttext").click(function(){
       swap("#about","#experience","../flame.jpg");
-      preloadImage("../hexed.jpg");
+     
   });
   
   $("#experiencetext").click(function(){
       swap("#experience","#projects","../hexed.jpg");
-      preloadImage("../glow.jpg");
+      
   });
   
   $("#projectstext").click(function(){
