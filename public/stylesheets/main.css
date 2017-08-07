@@ -37,9 +37,10 @@ body {
   text-align: center;
   font-size: 1.4em;
 }
-.section-center .experience-photo{
+.section-center .experience-photo {
   height: 5em;
   max-width: 15em;
+  margin: 5px;
 }
 .section-center .headshot {
   height: 9em;
