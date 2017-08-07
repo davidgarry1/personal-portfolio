@@ -88,11 +88,9 @@ body {
   font-size: 3em;
 }
 .title {
-  text-align: center;
   font-size: 6vw;
   line-height: 0.65em;
   overflow: hidden;
-  background-color: black;
   color: white;
   padding-top: 0px;
   white-space: nowrap;

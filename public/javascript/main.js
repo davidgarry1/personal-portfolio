@@ -21,23 +21,24 @@ setTimeout(function() {
 
 $("document").ready(function(){
   $("#introtext").click(function(){
-      swap("#intro","#about");
+      swap("#intro","#about","blue");
   });
   $("#abouttext").click(function(){
-      swap("#about","#experience");
+      swap("#about","#experience","green");
   });
   $("#experiencetext").click(function(){
-      swap("#experience","#projects");
+      swap("#experience","#projects","red");
   });
   $("#projectstext").click(function(){
-      swap("#projects","#resume");
+      swap("#projects","#resume","purple");
   });
   $("#resumetext").click(function(){
-      swap("#resume","#intro");
+      swap("#resume","#intro","black");
   });
 });
 
-function swap(a,b){
+function swap(a,b,c){
   $(a).fadeOut(250);
   $(b).delay(250).fadeIn(250);
+  $("#fadetitle").css("background-color",c);
 }
