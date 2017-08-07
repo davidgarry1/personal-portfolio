@@ -116,14 +116,14 @@ body {
 }
 
 .shape {
-  background: transparent;
+  background-color: black;
   stroke-width: 0px;
   stroke: #fff;
   cursor: pointer;
 }
 
 .text {
-  color: #000;
+  color: #fff;
   font-size: 2em;
   position: relative;
   top: -40px;
