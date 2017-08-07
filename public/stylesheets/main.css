@@ -129,6 +129,10 @@ body {
   top: -40px;
 }
 
+.inner-body {
+  margin: 15px;
+}
+
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;
