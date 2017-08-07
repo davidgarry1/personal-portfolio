@@ -127,6 +127,7 @@ body {
   font-size: 2em;
   position: relative;
   top: -40px;
+  cursor: pointer;
 }
 
 .inner-body {
