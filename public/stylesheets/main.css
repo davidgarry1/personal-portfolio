@@ -116,7 +116,6 @@ body {
 }
 
 .shape {
-  fill: grey;
   stroke-width: 0px;
   stroke: #fff;
   cursor: pointer;
@@ -128,6 +127,8 @@ body {
   position: relative;
   top: -40px;
   cursor: pointer;
+  text-decoration: overline;
+  text-decoration-style: wavy;
 }
 
 .inner-body {
