@@ -28,6 +28,9 @@ $("document").ready(function(){
   $("#abouttext").click(function(){
       swap("#about","#experience","");
       history.pushState({urlPath:'/'},"",'/experience');
+      //Preload image
+      img1 = new Image();
+      img1.src = "../glow.jpg";
   });
   $("#experiencetext").click(function(){
       swap("#experience","#projects","");
