@@ -38,7 +38,7 @@ body {
   font-size: 1.4em;
 }
 .section-center .photo-container {
-
+display: inline-block;
 }
 .section-center .experience-photo-large {
   height: 5em;
