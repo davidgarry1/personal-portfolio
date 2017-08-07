@@ -116,8 +116,7 @@ body {
 }
 
 .shape {
-  background-color: black;
-  color: black;
+  fill: black;
   stroke-width: 0px;
   stroke: black;
   cursor: pointer;
@@ -157,8 +156,7 @@ body {
 .svg-wrapper:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
-  background-color: white;
-  color: white;
+  fill: white;
 }
 
 .svg-wrapper:hover .text {
