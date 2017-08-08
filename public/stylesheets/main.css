@@ -144,7 +144,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center top;
+  background-position: center center;
 }
 .box .row.footer {
   text-align: center;
