@@ -167,19 +167,8 @@ body {
   padding-right: 0.2em;
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
-
-
-.margin-top-svg-wrapper {
-  height: 3em;
+.margin-top {
   margin-top: 40%;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 320px;
-  text-align: center;
 }
 .svg-wrapper {
   height: 3em;
