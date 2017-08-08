@@ -66,7 +66,7 @@ function swap(a,b,c){
 }
 
  wow = new WOW({
-  boxClass:     'animated',      
+  boxClass:     'wow',      
   animateClass: 'animated', // default
   offset:       0,          // default
   mobile:       true,       // default
