@@ -29,5 +29,17 @@
     "davidgarry",
     "express"
   ],
+  "icons": [
+		{
+			"src": "http://www-scf.usc.edu/~dgarry/img/headshot.jpg",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"theme_color": "#000000",
   "license": "None"
 }
