@@ -36,10 +36,12 @@ body {
   overflow: hidden;
 }
 .section-center .standalone-image {
+    margin-top: 1em;
     width: 30%;
 }
 @media(max-width: 600px){
    .section-center .standalone-image {
+      margin-top: 30px;
       width: 90%;
    }
   .section-center .photo-container {
