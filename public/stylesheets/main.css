@@ -26,6 +26,7 @@ body {
   text-align: center;
   font-size: 1.4em;
   overflow-x: hidden;
+    align-items: center;
 }
 
 .section-center .photo-container {
@@ -40,7 +41,8 @@ body {
     width: 30%;
 }
 .section-center .text-cutoff {
-    max-width: 50%;
+    width: 50%;
+    margin-left: 25%;
 }
 @media(max-width: 600px){
     .section-center .text-cutoff {
