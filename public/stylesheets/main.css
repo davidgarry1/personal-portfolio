@@ -28,7 +28,6 @@ body {
   overflow-x: hidden;
     align-items: center;
 }
-
 .section-center .photo-container {
   display: inline-block;
   margin: 15px;
@@ -127,7 +126,8 @@ body {
   margin: 15px;
   position: relative;
   background-color: white;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .box .row.footer {
   text-align: center;
