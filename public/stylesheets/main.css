@@ -198,10 +198,11 @@ body {
 
 .text {
   color: white;
-  font-size:  40px;
+  font-size: 1.7em;
   position: relative;
-  top: -52px;
+  top: calc(-1.7em - 5px);
   cursor: pointer;
+  line-height: 1.7em;
 }
 
 .inner-body {
@@ -224,8 +225,8 @@ body {
 }
 
 .svg-wrapper:hover .shape {
-  -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
+  -webkit-animation: 0.25s draw linear forwards;
+  animation: 0.25s draw linear forwards;
   fill: white;
 }
 
