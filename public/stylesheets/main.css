@@ -159,14 +159,17 @@ body {
   -webkit-transition: background-image 1s ease-in-out;
   -moz-transition: background-image 1s ease-in-out;
   -ms-transition: background-image 1s ease-in-out;
+  -o-transition: background-image 1s ease-in-out;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   transition: background-image 1s ease-in-out;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
-  background-size: cover;
-  -o-background-size: cover;
+  
   padding-top: 0.4em;
   text-align: right;
   padding-right: 0.2em;
@@ -190,7 +193,7 @@ body {
 }
 .shape {
   height: 100%;
-   width: 100%;
+  width: 100%;
   fill: black;
   stroke-width: 0px;
   stroke: black;
@@ -231,6 +234,9 @@ body {
 
 .svg-wrapper:hover .shape {
   -webkit-animation: 0.38s draw linear forwards;
+  -moz-animation: 0.38s draw linear forwards;
+  -ms-animation: 0.38s draw linear forwards;
+  -o-animation: 0.38s draw linear forwards;
   animation: 0.38s draw linear forwards;
   fill: white;
 }
