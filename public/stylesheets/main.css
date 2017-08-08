@@ -132,19 +132,19 @@ body {
   overflow-x: hidden;
   background-color: white;
   background-image: url('../white.jpg');
-  -webkit-transition: background-image 3s ease-in-out;
-  -moz-transition: background-image 3s ease-in-out;
-  -ms-transition: background-image 3s ease-in-out;
-  -o-transition: background-image 3s ease-in-out;
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  -ms-transition: background-image 1s ease-in;
+  -o-transition: background-image 1s ease-in;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  transition: background-image 3s ease-in-out;
+  transition: background-image 1s ease-in;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center top;
 }
 .box .row.footer {
   text-align: center;
