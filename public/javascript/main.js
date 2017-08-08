@@ -32,7 +32,9 @@ function preloadImage(e){
 $("document").ready(function(){
   preloadImage("../estate.jpg");
   $("#fadetitle").css("background-image","url(../black.jpg)");
-  $("#dyno").css("background-image","url(../estate.jpg)");
+  setTimeout(function(){
+         $("#dyno").css("background-image","url(../estate.jpg)");
+  }, 1000);
   preloadImage("../rock.jpg");
     
   wow = new WOW({
