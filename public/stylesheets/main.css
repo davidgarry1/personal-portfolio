@@ -194,7 +194,7 @@ body {
   margin-top: 25vh;
 }
 .svg-wrapper {
-  height: 3em;
+  height: 60px;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -221,11 +221,12 @@ body {
 
 .text {
   color: white;
-  font-size: 1.7em;
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
   position: relative;
-  top: calc(-1.7em - 5px);
+  top: -48px;
   cursor: pointer;
-  line-height: 1.7em;
 }
 
 .inner-body {
