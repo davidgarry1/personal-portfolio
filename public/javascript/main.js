@@ -31,6 +31,7 @@ function preloadImage(e){
 
 $("document").ready(function(){
   $("#fadetitle").css("background-image","url(../black.jpg)");
+  $("#dyno").css("background-image","url(../estate.jpg)");
   preloadImage("../rock.jpg");
     
   wow = new WOW({
@@ -44,6 +45,7 @@ $("document").ready(function(){
   
   $("#introtext").click(function(){
       swap("#intro","#about","../rock.jpg");
+      $("#dyno").css("background-image","url()");
       preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
       preloadImage("../glow.jpg");
@@ -62,7 +64,7 @@ $("document").ready(function(){
   });
   $("#resumetext").click(function(){
       swap("#resume","#intro","../black.jpg");
-
+      $("#dyno").css("background-image","url(../estate.jpg)");
   });
 });
 
