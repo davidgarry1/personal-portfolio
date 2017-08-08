@@ -46,12 +46,13 @@ $("document").ready(function(){
   $("#introtext").click(function(){
       swap("#intro","#about","../rock.jpg");
       $("#dyno").css("background-image","url()"); //To avoid css fade
-      $("#dyno").css("background-image","url(../white.jpg)");
+      $("#dyno").css("background-color","white");
       preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
       preloadImage("../glow.jpg");
   });
   $("#abouttext").click(function(){
+      $("#dyno").css("background-image","url(../white.jpg)");
       swap("#about","#experience","../hexed.jpg");
      
   });
