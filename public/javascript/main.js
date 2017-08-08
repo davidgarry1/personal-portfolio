@@ -30,6 +30,7 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
+  preloadImage("../estate.jpg");
   $("#fadetitle").css("background-image","url(../black.jpg)");
   $("#dyno").css("background-image","url(../estate.jpg)");
   preloadImage("../rock.jpg");
