@@ -211,7 +211,7 @@ body {
   color: white;
   font-size: 2em;
   position: relative;
-  top: -1.5em;
+  top: -100%;
   cursor: pointer;
 }
 
