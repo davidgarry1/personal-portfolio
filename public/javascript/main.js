@@ -32,6 +32,15 @@ function preloadImage(e){
 $("document").ready(function(){
   $("#fadetitle").css("background-image","url(../black.jpg)");
   preloadImage("../rock.jpg");
+    
+  wow = new WOW({
+      boxClass:     'wow',      
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+  });
+  wow.init();
   
   $("#introtext").click(function(){
       swap("#intro","#about","../rock.jpg");
@@ -64,12 +73,3 @@ function swap(a,b,c){
         $(b).fadeIn(250);
     });
 }
-
- wow = new WOW({
-  boxClass:     'wow',      
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       true,       // default
-  live:         true        // default
-});
-wow.init();
