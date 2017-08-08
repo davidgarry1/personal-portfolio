@@ -45,6 +45,7 @@ $("document").ready(function(){
   
   $("#introtext").click(function(){
       swap("#intro","#about","../rock.jpg");
+      $("#dyno").css("background-image","url()"); //To avoid css fade
       $("#dyno").css("background-image","url(../white.jpg)");
       preloadImage("../sky.jpg");
       preloadImage("../hexed.jpg");
