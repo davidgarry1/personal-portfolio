@@ -64,3 +64,12 @@ function swap(a,b,c){
         $(b).fadeIn(250);
     });
 }
+
+ wow = new WOW({
+  boxClass:     'animated',      
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       true,       // default
+  live:         true        // default
+});
+wow.init();
