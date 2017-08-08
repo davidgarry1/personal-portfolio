@@ -131,7 +131,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   background-color: white;
-  background-image: url('white.jpg');
+  background-image: url('../white.jpg');
   -webkit-transition: background-image 3s ease-in-out;
   -moz-transition: background-image 3s ease-in-out;
   -ms-transition: background-image 3s ease-in-out;
@@ -170,7 +170,7 @@ body {
 
 .title-text {
   background-color: black;
-  background-image: url('black.jpg');
+  background-image: url('../black.jpg');
   -webkit-transition: background-image 1s ease-in-out;
   -moz-transition: background-image 1s ease-in-out;
   -ms-transition: background-image 1s ease-in-out;
