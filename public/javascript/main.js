@@ -1,6 +1,6 @@
 setInterval(function(){
   animateLine();
-},1400);
+},5000);
 
 function animateLine(){
   
@@ -17,7 +17,7 @@ path.style.strokeDashoffset = length;
 path.getBoundingClientRect();
 // Define our transition
 path.style.transition = path.style.WebkitTransition =
-  'stroke-dashoffset 1s ease-in-out';
+  'stroke-dashoffset 3s ease-in-out';
 // Go!
 path.style.strokeDashoffset = '0';
  
