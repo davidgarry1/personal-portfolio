@@ -37,7 +37,7 @@ function animateLine(){
   // picks up the starting position before animating
   path.getBoundingClientRect();
   // Define our transition
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 1s ease-in-out';
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 3s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }
