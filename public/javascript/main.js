@@ -1,7 +1,29 @@
 hideLine(); //Will be moved to CSS once determined final
+hideBody();
+hideHammer();
 
 function hideLine(){
   var path = document.querySelector('.squiggle-animated path');
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition ='none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+}
+
+function hideBody(){
+  var path = document.getElementById("body");
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition ='none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+}
+
+function hideHammer(){
+  var path = document.getElementById("hammer");
   var length = path.getTotalLength();
   // Clear any previous transition
   path.style.transition = path.style.WebkitTransition ='none';
