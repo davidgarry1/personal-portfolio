@@ -1,14 +1,3 @@
-var vendors = ['-moz-','-webkit-','-o-','-ms-','-khtml-',''];
-function toCamelCase(str){
-    return str.toLowerCase().replace(/(\-[a-z])/g, function($1){return $1.toUpperCase().replace('-','');});
-};
-function setCss3Style(element,prop,val){
-    var el = document.getElementById(element);
-    for(var i=0,l=vendors.length;i<l;i++){
-        el.style[toCamelCase(vendors[i] + prop)] = val;
-    }
-};
-   
 hideLine(); //Will be moved to CSS once determined final
 
 function hideLine(){
@@ -94,12 +83,10 @@ $("document").ready(function(){
   $("#introtext").click(function(){
       animateLine();
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
-      setCss3Style('dyno', 'background-image', 'none !important');
-      setCss3Style('dyno', 'background-color', 'none !important');
+      $("#dyno").removeClass("fading");
       swap("#intro","#about");
       $("#dyno").css("background-image","url(../white.jpg)");
       $("#dyno").css("background-color","white");
-      setCss3Style('dyno', 'background-image', '1s ease-in');
   });
   $("#abouttext").click(function(){
       swap("#about","#experience");
@@ -113,6 +100,7 @@ $("document").ready(function(){
   $("#resumetext").click(function(){
       retractLine();
       swap("#resume","#intro");
+      $("#dyno").addClass("fading");
       $("#dyno").css("background-image","url(../estate.jpg)");
   });
 });
