@@ -206,6 +206,11 @@ body {
 .margin-top {
   margin-top: 25vh;
 }
+.move-to-top {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
 .svg-wrapper {
   height: 60px;
   margin-top: 0px;
