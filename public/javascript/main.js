@@ -1,29 +1,14 @@
-var vendors = [
-    '-webkit-',
-    '-o-',
-    '-moz-',
-    '-ms-',
-    ''
-];
-
-function toCamelCase(str) {
-    return str.toLowerCase().replace(/(\-[a-z])/g, function($1) {
-        return $1.toUpperCase().replace('-', '');
-    });
-}
-
-function setCss3Style(element, prop, val) {
+var vendors = ['-moz-','-webkit-','-o-','-ms-','-khtml-',''];
+function toCamelCase(str){
+    return str.toLowerCase().replace(/(\-[a-z])/g, function($1){return $1.toUpperCase().replace('-','');});
+};
+function setCss3Style(element,prop,val){
     var el = document.getElementById(element);
-    vendors.forEach(function(vendor) {
-        var property = toCamelCase(vendor + prop);
-
-        if(p in el.style) {
-            el.style[p] = val;
-        }
-    });
-}
-
-
+    for(var i=0,l=vendors.length;i<l;i++){
+        el.style[toCamelCase(vendors[i] + prop)] = val;
+    }
+};
+   
 hideLine(); //Will be moved to CSS once determined final
 
 function hideLine(){
