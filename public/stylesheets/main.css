@@ -198,7 +198,9 @@ body {
 }
 
 .svg-animation {
-  height: 0.99em;
+  height: 1.05em;
+  display: inline-block;
+  position: absolute;
 }
 
 .margin-top {
