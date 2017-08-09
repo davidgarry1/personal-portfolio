@@ -198,6 +198,11 @@ body {
   overflow: hidden;
 }
 
+.svg-animation {
+  width: 100%;
+  height: 100%;
+}
+
 .margin-top {
   margin-top: 25vh;
 }
