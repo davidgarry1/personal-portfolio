@@ -1,23 +1,33 @@
-animateLine();
-function animateLine(){
-  
+hideLine(); //Will be moved to CSS once determined final
+
+function hideLine(){
   var path = document.querySelector('.squiggle-animated path');
-var length = path.getTotalLength();
-// Clear any previous transition
-path.style.transition = path.style.WebkitTransition =
-  'none';
-// Set up the starting positions
-path.style.strokeDasharray = length + ' ' + length;
-path.style.strokeDashoffset = length;
-// Trigger a layout so styles are calculated & the browser
-// picks up the starting position before animating
-path.getBoundingClientRect();
-// Define our transition
-path.style.transition = path.style.WebkitTransition =
-  'stroke-dashoffset 3s ease-in-out';
-// Go!
-path.style.strokeDashoffset = '0';
- 
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition =
+    'none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+}
+
+function animateLine(){
+  var path = document.querySelector('.squiggle-animated path');
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition =
+    'none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+  // Trigger a layout so styles are calculated & the browser
+  // picks up the starting position before animating
+  path.getBoundingClientRect();
+  // Define our transition
+  path.style.transition = path.style.WebkitTransition =
+    'stroke-dashoffset 3s ease-in-out';
+  // Go!
+  path.style.strokeDashoffset = '0';
 }
 
 
@@ -59,17 +69,10 @@ $("document").ready(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
   //preloadImage("../rock.jpg");
-    
-  wow = new WOW({
-      boxClass:     'wow',      
-      animateClass: 'animated', // default
-      offset:       0,          // default
-      mobile:       true,       // default
-      live:         true        // default
-  });
-  wow.init();
+ 
   
   $("#introtext").click(function(){
+      animateLine();
       swap("#intro","#about","../rock.jpg");
       preloadImage("../dg.jpg");
       $("#dg").attr("src","../dg.jpg");
