@@ -76,7 +76,7 @@ function animateBody(){
   // picks up the starting position before animating
   path.getBoundingClientRect();
   // Define our transition
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 5s ease-in-out';
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }
@@ -93,7 +93,7 @@ function animateHammer(){
   // picks up the starting position before animating
   path.getBoundingClientRect();
   // Define our transition
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 5s ease-in-out';
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }
