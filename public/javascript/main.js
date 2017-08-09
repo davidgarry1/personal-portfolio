@@ -108,7 +108,6 @@ $("document").ready(function(){
  
   $("#introtext").click(function(){
       animateLine();
-      document.getElementById("#dyno").style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in';
       swap("#intro","#about","../rock.jpg");
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       setCss3Style('dyno', 'background-image', '0s ease-in');
