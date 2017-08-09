@@ -95,7 +95,7 @@ $("document").ready(function(){
       animateLine();
       swap("#intro","#about","../rock.jpg");
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
-      setCss3Style('dyno', 'background-image', '0s ease-in');
+      setCss3Style('dyno', 'background-image', 'none !important');
       $("#dyno").css("background-image","");
       $("#dyno").css("background-color","white");
       setCss3Style('dyno', 'background-image', '1s ease-in');
