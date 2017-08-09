@@ -1,3 +1,29 @@
+var vendors = [
+    '-webkit-',
+    '-o-',
+    '-moz-',
+    '-ms-',
+    ''
+];
+
+function toCamelCase(str) {
+    return str.toLowerCase().replace(/(\-[a-z])/g, function($1) {
+        return $1.toUpperCase().replace('-', '');
+    });
+}
+
+function setCss3Style(element, prop, val) {
+    var el = document.getElementById(element);
+    vendors.forEach(function(vendor) {
+        var property = toCamelCase(vendor + prop);
+
+        if(p in el.style) {
+            el.style[p] = val;
+        }
+    });
+}
+
+
 hideLine(); //Will be moved to CSS once determined final
 
 function hideLine(){
@@ -76,23 +102,19 @@ function preloadImage(e){
 
 $("document").ready(function(){
   preloadImage("../estate.jpg");
-  //$("#fadetitle").css("background-image","url(../black.jpg)");
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
-  //preloadImage("../rock.jpg");
  
-  
   $("#introtext").click(function(){
       animateLine();
+      document.getElementById("#dyno").style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in';
       swap("#intro","#about","../rock.jpg");
-      preloadImage("../dg.jpg");
-      $("#dg").attr("src","../dg.jpg");
-      $("#dyno").css("background-image",""); //To avoid css fade
+      $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
+      setCss3Style('dyno', 'background-image', '0s ease-in');
+      $("#dyno").css("background-image","");
       $("#dyno").css("background-color","white");
-      //preloadImage("../sky.jpg");
-     // preloadImage("../hexed.jpg");
-      //preloadImage("../glow.jpg");
+      setCss3Style('dyno', 'background-image', '1s ease-in');
   });
   $("#abouttext").click(function(){
       $("#dyno").css("background-image","url(../white.jpg)");
