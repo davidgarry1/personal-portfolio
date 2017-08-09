@@ -31,11 +31,11 @@ function preloadImage(e){
 
 $("document").ready(function(){
   preloadImage("../estate.jpg");
-  $("#fadetitle").css("background-image","url(../black.jpg)");
+  //$("#fadetitle").css("background-image","url(../black.jpg)");
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
-  preloadImage("../rock.jpg");
+  //preloadImage("../rock.jpg");
     
   wow = new WOW({
       boxClass:     'wow',      
@@ -48,21 +48,20 @@ $("document").ready(function(){
   
   $("#introtext").click(function(){
       swap("#intro","#about","../rock.jpg");
+      preloadImage("../dg.jpg");
+      $("#dg").attr("src","../dg.jpg");
       $("#dyno").css("background-image","url()"); //To avoid css fade
       $("#dyno").css("background-color","white");
-      preloadImage("../sky.jpg");
-      preloadImage("../hexed.jpg");
-      preloadImage("../glow.jpg");
+      //preloadImage("../sky.jpg");
+     // preloadImage("../hexed.jpg");
+      //preloadImage("../glow.jpg");
   });
   $("#abouttext").click(function(){
       $("#dyno").css("background-image","url(../white.jpg)");
       swap("#about","#experience","../hexed.jpg");
-     
   });
   $("#experiencetext").click(function(){
       swap("#experience","#projects","../glow.jpg");
-      preloadImage("../dg.jpg");
-      $("#dg").attr("src","../dg.jpg");
   });
   $("#projectstext").click(function(){
       swap("#projects","#resume","../sky.jpg");
@@ -74,7 +73,7 @@ $("document").ready(function(){
 });
 
 function swap(a,b,c){
-  $("#fadetitle").css("background-image","url("+c+")");
+  //$("#fadetitle").css("background-image","url("+c+")");
   $(a).fadeOut(250, function() {
         $("#dyno").scrollTop(0);
         $(b).fadeIn(250);
