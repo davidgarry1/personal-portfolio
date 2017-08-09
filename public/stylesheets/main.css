@@ -190,6 +190,29 @@ body {
   padding-right: 0.2em;
   font-family: 'Montserrat', sans-serif;
 }
+
+.title-animation {
+   float: left;
+   display: inline-block;
+  -webkit-transition: background-image 1s ease-in-out;
+  -moz-transition: background-image 1s ease-in-out;
+  -ms-transition: background-image 1s ease-in-out;
+  -o-transition: background-image 1s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  transition: background-image 1s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  padding-top: 0.4em;
+  text-align: right;
+  padding-left: 0.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .margin-top {
   margin-top: 25vh;
 }
