@@ -93,6 +93,7 @@ $("document").ready(function(){
       swap("#projects","#resume","../sky.jpg");
   });
   $("#resumetext").click(function(){
+      hideLine();
       swap("#resume","#intro","../black.jpg");
       $("#dyno").css("background-image","url(../estate.jpg)");
   });
