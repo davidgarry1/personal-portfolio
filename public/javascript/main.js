@@ -42,6 +42,40 @@ function animateLine(){
   path.style.strokeDashoffset = '0';
 }
 
+function animateBody(){
+  var path = document.getElementById("body");
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition ='none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+  // Trigger a layout so styles are calculated & the browser
+  // picks up the starting position before animating
+  path.getBoundingClientRect();
+  // Define our transition
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 5s ease-in-out';
+  // Go!
+  path.style.strokeDashoffset = '0';
+}
+
+function animateHammer(){
+  var path = document.getElementById("hammer");
+  var length = path.getTotalLength();
+  // Clear any previous transition
+  path.style.transition = path.style.WebkitTransition ='none';
+  // Set up the starting positions
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+  // Trigger a layout so styles are calculated & the browser
+  // picks up the starting position before animating
+  path.getBoundingClientRect();
+  // Define our transition
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 5s ease-in-out';
+  // Go!
+  path.style.strokeDashoffset = '0';
+}
+
 
 history.pushState({urlPath:'/'},"",'/');
 
@@ -81,7 +115,7 @@ $("document").ready(function(){
   }, 1000);
  
   $("#introtext").click(function(){
-      animateLine();
+      animateBody();
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       $("#dyno").removeClass("fading");
       swap("#intro","#about");
@@ -89,6 +123,7 @@ $("document").ready(function(){
       $("#dyno").css("background-color","white");
   });
   $("#abouttext").click(function(){
+      animateHammer();
       swap("#about","#experience");
   });
   $("#experiencetext").click(function(){
