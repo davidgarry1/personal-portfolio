@@ -132,19 +132,21 @@ body {
   overflow-x: hidden;
   background-color: white;
   background-image: url('../white.jpg');
-  -webkit-transition: background-image 1s ease-in;
-  -moz-transition: background-image 1s ease-in;
-  -ms-transition: background-image 1s ease-in;
-  -o-transition: background-image 1s ease-in;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  transition: background-image 1s ease-in;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
+}
+.fading {
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  -ms-transition: background-image 1s ease-in;
+  -o-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in;
 }
 .box .row.footer {
   text-align: center;
@@ -170,21 +172,8 @@ body {
 }
 
 .title-text {
-   float: right;
-   display: inline-block;
-  -webkit-transition: background-image 1s ease-in-out;
-  -moz-transition: background-image 1s ease-in-out;
-  -ms-transition: background-image 1s ease-in-out;
-  -o-transition: background-image 1s ease-in-out;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  transition: background-image 1s ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
+  float: right;
+  display: inline-block;
   padding-top: 0.4em;
   text-align: right;
   padding-right: 0.2em;
