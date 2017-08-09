@@ -93,32 +93,31 @@ $("document").ready(function(){
  
   $("#introtext").click(function(){
       animateLine();
-      swap("#intro","#about","../rock.jpg");
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       setCss3Style('dyno', 'background-image', 'none !important');
-      $("#dyno").css("background-image","");
+      setCss3Style('dyno', 'background-color', 'none !important');
+      swap("#intro","#about");
+      $("#dyno").css("background-image","url(../white.jpg)");
       $("#dyno").css("background-color","white");
       setCss3Style('dyno', 'background-image', '1s ease-in');
   });
   $("#abouttext").click(function(){
-      $("#dyno").css("background-image","url(../white.jpg)");
-      swap("#about","#experience","../hexed.jpg");
+      swap("#about","#experience");
   });
   $("#experiencetext").click(function(){
-      swap("#experience","#projects","../glow.jpg");
+      swap("#experience","#projects");
   });
   $("#projectstext").click(function(){
-      swap("#projects","#resume","../sky.jpg");
+      swap("#projects","#resume");
   });
   $("#resumetext").click(function(){
       retractLine();
-      swap("#resume","#intro","../black.jpg");
+      swap("#resume","#intro");
       $("#dyno").css("background-image","url(../estate.jpg)");
   });
 });
 
-function swap(a,b,c){
-  //$("#fadetitle").css("background-image","url("+c+")");
+function swap(a,b){
   $(a).fadeOut(250, function() {
         $("#dyno").scrollTop(0);
         $(b).fadeIn(250);
