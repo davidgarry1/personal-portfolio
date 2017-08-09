@@ -88,7 +88,7 @@ $("document").ready(function(){
       swap("#intro","#about","../rock.jpg");
       preloadImage("../dg.jpg");
       $("#dg").attr("src","../dg.jpg");
-      $("#dyno").css("background-image","url()"); //To avoid css fade
+      $("#dyno").css("background-image",""); //To avoid css fade
       $("#dyno").css("background-color","white");
       //preloadImage("../sky.jpg");
      // preloadImage("../hexed.jpg");
