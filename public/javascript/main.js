@@ -1,7 +1,4 @@
-setInterval(function(){
-  animateLine();
-},5000);
-
+animateLine();
 function animateLine(){
   
   var path = document.querySelector('.squiggle-animated path');
