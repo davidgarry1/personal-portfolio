@@ -193,9 +193,6 @@ body {
 
 .title-animation {
   float: left;
-  position: relative;
-  top: 0px;
-  left: 0px;
   padding: 0;
   overflow: hidden;
 }
