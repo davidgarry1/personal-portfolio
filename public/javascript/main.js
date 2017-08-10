@@ -14,7 +14,7 @@ function hideSVG(elementID){
 function retractSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s ease-out';
+  path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-out';
   path.style.strokeDasharray = length + ' ' + length;
   path.getBoundingClientRect();
   path.style.strokeDashoffset = length;
