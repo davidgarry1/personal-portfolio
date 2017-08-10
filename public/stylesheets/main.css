@@ -42,8 +42,8 @@ body {
     width: 30%;
 }
 .section-center .text-cutoff {
-    width: 50%;
-    margin-left: 25%;
+    width: 65%;
+    margin-left: 17.5%;
 }
 @media(max-width: 600px){
     .section-center .text-cutoff {
