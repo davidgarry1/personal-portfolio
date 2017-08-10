@@ -24,7 +24,7 @@
 	height: 100%;
 	outline: none;
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: #ff000;
 	background-color: rgba(255,255,255,0.3);
 	text-indent: -999em;
 	cursor: pointer; /* make the text accessible to screen readers */
