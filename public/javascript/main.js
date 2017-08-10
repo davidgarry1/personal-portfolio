@@ -112,11 +112,11 @@ function hideInnerBG(){
 
 var kk = 0;
 function swap(b){
-  $(".inner-body selection:not("+b+")").each(function() {
+  $(".inner-body section:not("+b+")").each(function() {
       $(this).fadeOut(250);
       console.log(kk++);
   });
-  $(".inner-body selection:not("+b+")").promise().done(function() {
+  $(".inner-body section:not("+b+")").promise().done(function() {
       $("#dyno").scrollTop(0);
       $(b).fadeIn(250);
       console.log("hi");
