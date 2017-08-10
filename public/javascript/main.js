@@ -1,103 +1,35 @@
-hideLine(); //Will be moved to CSS once determined final
-hideBody();
-hideHammer();
+hideSVG("line");
+hideSVG("hammer");
+hideSVG("body");
 
-function hideLine(){
-  var path = document.querySelector('.squiggle-animated path');
+
+function hideSVG(elementID){
+  var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  // Clear any previous transition
   path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
   path.style.strokeDasharray = length + ' ' + length;
   path.style.strokeDashoffset = length;
 }
 
-function hideBody(){
-  var path = document.getElementById("body");
+function retractSVG(elementID){
+  var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  // Clear any previous transition
-  path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
-  path.style.strokeDasharray = length + ' ' + length;
-  path.style.strokeDashoffset = length;
-}
-
-function hideHammer(){
-  var path = document.getElementById("hammer");
-  var length = path.getTotalLength();
-  // Clear any previous transition
-  path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
-  path.style.strokeDasharray = length + ' ' + length;
-  path.style.strokeDashoffset = length;
-}
-
-function retractLine(){
-  var path = document.querySelector('.squiggle-animated path');
-  var length = path.getTotalLength();
-  // Clear any previous transition
-  // Set up the starting positions
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in';
   path.style.strokeDasharray = length + ' ' + length;
-  // Trigger a layout so styles are calculated & the browser
-  // picks up the starting position before animating
   path.getBoundingClientRect();
-  // Define our transition
-  // Go!
   path.style.strokeDashoffset = length;
 }
 
-function animateLine(){
-  var path = document.querySelector('.squiggle-animated path');
+function animateSVG(elementID){
+  var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  // Clear any previous transition
   path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
   path.style.strokeDasharray = length + ' ' + length;
   path.style.strokeDashoffset = length;
-  // Trigger a layout so styles are calculated & the browser
-  // picks up the starting position before animating
   path.getBoundingClientRect();
-  // Define our transition
   path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
-  // Go!
   path.style.strokeDashoffset = '0';
 }
-
-function animateBody(){
-  var path = document.getElementById("body");
-  var length = path.getTotalLength();
-  // Clear any previous transition
-  path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
-  path.style.strokeDasharray = length + ' ' + length;
-  path.style.strokeDashoffset = length;
-  // Trigger a layout so styles are calculated & the browser
-  // picks up the starting position before animating
-  path.getBoundingClientRect();
-  // Define our transition
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
-  // Go!
-  path.style.strokeDashoffset = '0';
-}
-
-function animateHammer(){
-  var path = document.getElementById("hammer");
-  var length = path.getTotalLength();
-  // Clear any previous transition
-  path.style.transition = path.style.WebkitTransition ='none';
-  // Set up the starting positions
-  path.style.strokeDasharray = length + ' ' + length;
-  path.style.strokeDashoffset = length;
-  // Trigger a layout so styles are calculated & the browser
-  // picks up the starting position before animating
-  path.getBoundingClientRect();
-  // Define our transition
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
-  // Go!
-  path.style.strokeDashoffset = '0';
-}
-
 
 history.pushState({urlPath:'/'},"",'/');
 
@@ -137,7 +69,7 @@ $("document").ready(function(){
   }, 1000);
  
   $("#introtext").click(function(){
-      animateBody();
+      animateSVG("body");
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       $("#dyno").removeClass("fading");
       swap("#intro","#about");
@@ -145,10 +77,11 @@ $("document").ready(function(){
       $("#dyno").css("background-color","white");
   });
   $("#abouttext").click(function(){
-      animateHammer();
+      animateSVG("hammer");
       swap("#about","#experience");
   });
   $("#experiencetext").click(function(){
+      animateSVG("line");
       swap("#experience","#projects");
   });
   $("#projectstext").click(function(){
