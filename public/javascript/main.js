@@ -14,7 +14,7 @@ function hideSVG(elementID){
 function retractSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in';
+  path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 4s ease-out';
   path.style.strokeDasharray = length + ' ' + length;
   path.getBoundingClientRect();
   path.style.strokeDashoffset = length;
@@ -77,7 +77,7 @@ $("document").ready(function(){
       $("#dyno").css("background-color","white");
   });
   $("#abouttext").click(function(){
-      animateSVG("hammer");
+      //animateSVG("hammer");
       swap("#about","#experience");
   });
   $("#experiencetext").click(function(){
@@ -87,7 +87,7 @@ $("document").ready(function(){
       swap("#projects","#resume");
   });
   $("#resumetext").click(function(){
-      retractSVG("hammer");
+      //retractSVG("hammer");
       retractSVG("body");
       swap("#resume","#intro");
       $("#dyno").addClass("fading");
