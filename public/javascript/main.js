@@ -110,10 +110,11 @@ function hideInnerBG(){
   $("#dyno").css("background-color","white");
 }
 
-
+var kk = 0;
 function swap(b){
   $(".inner-body selection:not("+b+")").each(function() {
       $(this).fadeOut(250);
+      console.log(kk++);
   });
   $(".inner-body selection:not("+b+")").promise().done(function() {
       $("#dyno").scrollTop(0);
