@@ -226,6 +226,13 @@ body {
     width: 320px;
     text-align: center;
 }
+#mustache{
+    height: 4em;
+    width: 30%;
+    margin-left: -26.5%;
+    display: inline-block;
+    padding-bottom: 2.9em;
+}
 .svg-img {
     width: 100%;
     height: 100%;
