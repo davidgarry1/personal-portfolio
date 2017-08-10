@@ -25,21 +25,21 @@ body {
     z-index: 999;
 }
 .scroll_item {
-    border: 3px solid #FFF;
+    border: 3px solid #000;
     width: 10px;
     height: 10px;
     margin: 5px;
     cursor: pointer;
 }
 .scroll_item:hover{
-    background: #FFF;
+    background: #000;
 }
 .scroll_item_active {
-    border: 3px solid #FFF;
+    border: 3px solid #000;
     width: 10px;
     height: 10px;
     margin: 5px;
-    background-color: #FFF;
+    background-color: #000;
 }
 
 
