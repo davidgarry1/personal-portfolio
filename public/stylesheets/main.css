@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat:900);
-
 html {
     height: 100%;
     width: 100%;
@@ -16,8 +15,6 @@ body {
     padding: 0px;
     overflow: hidden;
 }
-
-
 .dots-div {
     position: fixed;
     bottom: calc(1% + 100px);
@@ -31,8 +28,8 @@ body {
     margin: 6px;
     cursor: pointer;
 }
-.scroll_item:hover{
-    background-color: rgba(0,0,0,0.8);
+.scroll_item:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .scroll_item_active {
     border: 3px solid #000;
@@ -41,31 +38,26 @@ body {
     margin: 6px;
     background-color: #000;
 }
-
-
-
-
-
 .footer .contact-icon {
     height: 1.8em;
     width: 1.8em;
 }
 .footer .contact-icon:hover {
-  position: relative;
-  top: -5px;
+    position: relative;
+    top: -5px;
 }
 .section-center {
-  text-align: center;
-  font-size: 1.4em;
-  overflow-x: hidden;
+    text-align: center;
+    font-size: 1.4em;
+    overflow-x: hidden;
     align-items: center;
 }
 .section-center .photo-container {
-  display: inline-block;
-  margin: 15px;
-  vertical-align: bottom;
-  width: 40%;
-  overflow: hidden;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: bottom;
+    width: 40%;
+    overflow: hidden;
 }
 .section-center .standalone-image {
     margin-top: 1em;
@@ -75,224 +67,213 @@ body {
     width: 65%;
     margin-left: 17.5%;
 }
-@media(max-width: 600px){
+@media(max-width: 600px) {
+    .dots-div {
+        display: none;
+    }
     .section-center .text-cutoff {
         width: 100%;
         margin-left: 0px;
     }
-   .section-center .standalone-image {
-      margin-top: 30px;
-      width: 90%;
-   }
-  .section-center .photo-container {
-    width: 90%;
-  }
-  .section-center .experience-subtext {
-    margin-bottom: 0.5em;
-  }
-  .margin-top {
-    margin-top: 5em;
-  }
+    .section-center .standalone-image {
+        margin-top: 30px;
+        width: 90%;
+    }
+    .section-center .photo-container {
+        width: 90%;
+    }
+    .section-center .experience-subtext {
+        margin-bottom: 0.5em;
+    }
+    .margin-top {
+        margin-top: 5em;
+    }
 }
 .section-center iframe {
-  height: 90%;
-  width: 90%;
+    height: 90%;
+    width: 90%;
 }
 .section-center .experience-photo-large {
-  height: 5em;
-  max-width: 90%;
-  margin: 5px;
-  display: inline-block;
+    height: 5em;
+    max-width: 90%;
+    margin: 5px;
+    display: inline-block;
 }
 .section-center .experience-photo-small {
-  height: 4em;
-  max-width: 80%;
-  margin: 5px;
-  display: inline-block;
+    height: 4em;
+    max-width: 80%;
+    margin: 5px;
+    display: inline-block;
 }
 .section-center .experience-subtext {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 .section-center .headshot {
-  height: 9em;
-  border-radius: 4.5em;
+    height: 9em;
+    border-radius: 4.5em;
 }
 .section-center a {
-  color: #7f7fbf;
-  text-decoration: none;
+    color: #7f7fbf;
+    text-decoration: none;
 }
 .section-center a:hover {
-  color: #e5e5f2;
-  position: relative;
-  top: -2px;
+    color: #e5e5f2;
+    position: relative;
+    top: -2px;
 }
 .sidebar li {
-  padding: 0px;
-  padding-bottom:3px;
-  margin: 0px;
+    padding: 0px;
+    padding-bottom: 3px;
+    margin: 0px;
 }
 .sidebar li::before {
-  content: "\00BB";
+    content: "\00BB";
 }
 .sidebar li:hover {
-  color: grey;
+    color: grey;
 }
 .box {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
 }
-.box .row {
-
-}
-.box .row.header {
-  flex: 0 1 auto;
-  /* The above is shorthand for:
+.box .row {} .box .row.header {
+    flex: 0 1 auto;
+    /* The above is shorthand for:
   flex-grow: 0,
   flex-shrink: 1,
   flex-basis: auto
   */
 }
 .box .row.content {
-  flex: 1 1 auto;
-  margin: 15px;
-  position: relative;
-  background-color: white;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: white;
-  background-image: url('../white.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
+    flex: 1 1 auto;
+    margin: 15px;
+    position: relative;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    background-image: url('../white.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
 }
 .fading {
-  -webkit-transition: background-image 1s ease-in;
-  -moz-transition: background-image 1s ease-in;
-  -ms-transition: background-image 1s ease-in;
-  -o-transition: background-image 1s ease-in;
-  transition: background-image 1s ease-in;
+    -webkit-transition: background-image 1s ease-in;
+    -moz-transition: background-image 1s ease-in;
+    -ms-transition: background-image 1s ease-in;
+    -o-transition: background-image 1s ease-in;
+    transition: background-image 1s ease-in;
 }
 .box .row.footer {
-  text-align: center;
-  flex: 0 1 auto;
-  margin: 7px;
-  font-size: 1.3em;
-  font-weight: bold;
+    text-align: center;
+    flex: 0 1 auto;
+    margin: 7px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
-
 .intro-animation {
-  text-align: left;
-  font-size: 3em;
+    text-align: left;
+    font-size: 3em;
 }
 .title {
-  background-color: black;
-  font-size: 6vw;
-  line-height: 0.65em;
-  overflow: hidden;
-  color: white;
-  padding-top: 0px;
-  white-space: nowrap;
-  overflow: hidden;
+    background-color: black;
+    font-size: 6vw;
+    line-height: 0.65em;
+    overflow: hidden;
+    color: white;
+    padding-top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
 }
-
 .title-text {
-  float: right;
-  display: inline-block;
-  padding-top: 0.4em;
-  text-align: right;
-  padding-right: 0.2em;
-  font-family: 'Montserrat', sans-serif;
+    float: right;
+    display: inline-block;
+    padding-top: 0.4em;
+    text-align: right;
+    padding-right: 0.2em;
+    font-family: 'Montserrat', sans-serif;
 }
-
 .title-animation {
-  float: left;
-  padding: 0;
-  overflow: hidden;
+    float: left;
+    padding: 0;
+    overflow: hidden;
 }
-
 .svg-animation {
-  height: 1.05em;
-  display: inline-block;
-  position: absolute;
+    height: 1.05em;
+    display: inline-block;
+    position: absolute;
 }
-
 .margin-top {
-  margin-top: 25vh;
+    margin-top: 25vh;
 }
 .move-to-top {
-  position: relative;
-  top: 0px;
-  right: 0px;
+    position: relative;
+    top: 0px;
+    right: 0px;
 }
 .svg-wrapper {
-  height: 60px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 320px;
-  text-align: center;
+    height: 60px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 320px;
+    text-align: center;
 }
 .svg-img {
     width: 100%;
     height: 100%;
 }
 .shape {
-  height: 100%;
-  width: 100%;
-  fill: black;
-  stroke-width: 0px;
-  stroke: black;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-.text {
-  color: white;
-  font-size: 28px;
-  line-height: 32px;
-  position: relative;
-  top: -48px;
-  cursor: pointer;
-}
-
-.inner-body {
-  margin: 15px;
-}
-
-@keyframes draw {
-  0% {
-    stroke: black;
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
+    height: 100%;
+    width: 100%;
+    fill: black;
     stroke-width: 0px;
-  }
-  100% {
     stroke: black;
-    stroke-dasharray: 760;
-    stroke-dashoffset: 0;
-    stroke-width: 5px;
-  }
+    cursor: pointer;
 }
-
+.hidden {
+    display: none;
+}
+.text {
+    color: white;
+    font-size: 28px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    cursor: pointer;
+}
+.inner-body {
+    margin: 15px;
+}
+@keyframes draw {
+    0% {
+        stroke: black;
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 0px;
+    }
+    100% {
+        stroke: black;
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 5px;
+    }
+}
 .svg-wrapper:hover .shape {
-  -webkit-animation: 0.38s draw linear forwards;
-  -moz-animation: 0.38s draw linear forwards;
-  -ms-animation: 0.38s draw linear forwards;
-  -o-animation: 0.38s draw linear forwards;
-  animation: 0.38s draw linear forwards;
-  fill: white;
+    -webkit-animation: 0.38s draw linear forwards;
+    -moz-animation: 0.38s draw linear forwards;
+    -ms-animation: 0.38s draw linear forwards;
+    -o-animation: 0.38s draw linear forwards;
+    animation: 0.38s draw linear forwards;
+    fill: white;
 }
-
 .svg-wrapper:hover .text {
-  color: black;
+    color: black;
 }
