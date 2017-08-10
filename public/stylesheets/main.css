@@ -88,11 +88,11 @@ body {
   border-radius: 4.5em;
 }
 .section-center a {
-  color: #000080;
+  color: #7f7fbf;
   text-decoration: none;
 }
 .section-center a:hover {
-  color: #6666b2;
+  color: #e5e5f2;
   position: relative;
   top: -2px;
 }
