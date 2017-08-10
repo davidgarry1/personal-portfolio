@@ -75,10 +75,9 @@ $("document").ready(function(){
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
- 
+  
   $("#introtext").click(function(){
       animateSVG("body");
-      $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       hideInnerBG();
       swap("#about");
       makeDotActive("introtext");
