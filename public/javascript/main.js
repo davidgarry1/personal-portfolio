@@ -31,6 +31,11 @@ function animateSVG(elementID){
   path.style.strokeDashoffset = '0';
 }
 
+$('.scroll_item').on('click', function() {
+    var elem = $('#'+$(this).data('page')).click();
+    $(this).addClass('scroll_item_active').siblings('.scroll_item_active').removeClass('scroll_item_active');
+});
+
 history.pushState({urlPath:'/'},"",'/');
 
 var div = document.getElementById('fadetitle'),
@@ -73,32 +78,39 @@ $("document").ready(function(){
       animateSVG("body");
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       $("#dyno").removeClass("fading");
-      swap("#intro","#about");
+      swap("#about");
       $("#dyno").css("background-image","url(../white.jpg)");
       $("#dyno").css("background-color","white");
   });
   $("#abouttext").click(function(){
       //animateSVG("hammer");
-      swap("#about","#experience");
+      swap("#experience");
   });
   $("#experiencetext").click(function(){
-      swap("#experience","#projects");
+      swap("#projects");
   });
   $("#projectstext").click(function(){
-      swap("#projects","#resume");
+      swap("#resume");
   });
   $("#resumetext").click(function(){
       //retractSVG("hammer");
       retractSVG("body");
-      swap("#resume","#intro");
+      swap("#intro");
       $("#dyno").addClass("fading");
       $("#dyno").css("background-image","url(../estate.jpg)");
   });
 });
 
-function swap(a,b){
-  $(a).fadeOut(250, function() {
-        $("#dyno").scrollTop(0);
-        $(b).fadeIn(250);
-    });
+var elems = [$("#intro"),$("#about"),$("#experience"),$("#projects"),$("#resume")];
+function swap(b){
+  for(var i =0; i<elems.length; i++){
+    if(i==elems.length){
+        elems[i].fadeOut(250, function() {
+            $("#dyno").scrollTop(0);
+            $(b).fadeIn(250);
+        });
+    } else {
+      elems[i].fadeOut(250);
+    }
+  }
 }
