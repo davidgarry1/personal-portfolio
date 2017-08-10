@@ -2,6 +2,7 @@ hideSVG("line");
 hideSVG("hammer");
 hideSVG("body");
 hideSVG("mouse");
+hideSVG("computer");
 
 
 function hideSVG(elementID){
@@ -101,6 +102,7 @@ $("document").ready(function(){
   });
   $("#resumetext").click(function(){
       retractSVG("mouse");
+      retractSVG("computer");
       retractSVG("hammer");
       retractSVG("body");
       swap("#intro");
