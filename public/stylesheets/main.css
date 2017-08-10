@@ -16,6 +16,36 @@ body {
     padding: 0px;
     overflow: hidden;
 }
+
+
+.dots-div {
+    position: fixed;
+    bottom: calc(1% + 100px);
+    right: 30px;
+    z-index: 999;
+}
+.scroll_item {
+    border: 3px solid #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.scroll_item:hover{
+    background: #FFF;
+}
+.scroll_item_active {
+    border: 3px solid #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #FFF;
+}
+
+
+
+
+
 .footer .contact-icon {
     height: 1.8em;
     width: 1.8em;
