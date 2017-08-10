@@ -83,6 +83,7 @@ $("document").ready(function(){
       makeDotActive("introtext");
   });
   $("#abouttext").click(function(){
+      animateSVG("hammer");
       hideInnerBG();
       swap("#experience");
       makeDotActive("abouttext");
@@ -99,9 +100,9 @@ $("document").ready(function(){
       makeDotActive("projectstext");
   });
   $("#resumetext").click(function(){
-      //retractSVG("hammer");
-      retractSVG("body");
       retractSVG("mouse");
+      retractSVG("hammer");
+      retractSVG("body");
       swap("#intro");
       $("#dyno").addClass("fading");
       setTimeout(function(){
