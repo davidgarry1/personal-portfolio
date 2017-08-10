@@ -81,14 +81,14 @@ $("document").ready(function(){
       swap("#about","#experience");
   });
   $("#experiencetext").click(function(){
-      animateSVG("line");
       swap("#experience","#projects");
   });
   $("#projectstext").click(function(){
       swap("#projects","#resume");
   });
   $("#resumetext").click(function(){
-      retractLine();
+      retractSVG("hammer");
+      retractSVG("body");
       swap("#resume","#intro");
       $("#dyno").addClass("fading");
       $("#dyno").css("background-image","url(../estate.jpg)");
