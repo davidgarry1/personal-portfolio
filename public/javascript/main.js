@@ -72,6 +72,7 @@ $("document").ready(function(){
   makeDotActive("resumetext");
   $("#svgtitle").show();
   preloadImage("../estate.jpg");
+  $("#dg").attr("src","../dg.jpg");
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
