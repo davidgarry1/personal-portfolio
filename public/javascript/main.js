@@ -110,16 +110,14 @@ function hideInnerBG(){
   $("#dyno").css("background-color","white");
 }
 
-var elems = ["#intro","#about","#experience","#projects","#resume"];
+
 function swap(b){
-  for(var i =0; i<elems.length; i++){
-    if(i==elems.length){
-        $(elems[i]).fadeOut(250, function() {
-            $("#dyno").scrollTop(0);
-            $(b).finish().fadeIn(250);
-        });
-    } else {
-      $(elems[i]).fadeOut(250);
-    }
-  }
+  $(".inner-body selection:not("+b+")").each(function() {
+      $(this).fadeOut(250);
+  });
+  $(".inner-body selection:not("+b+")").promise().done(function() {
+      $("#dyno").scrollTop(0);
+      $(b).fadeIn(250);
+      console.log("hi");
+  });
 }
