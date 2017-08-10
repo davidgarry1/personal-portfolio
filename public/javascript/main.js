@@ -63,6 +63,7 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
+  $("#svgtitle").show();
   preloadImage("../estate.jpg");
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
