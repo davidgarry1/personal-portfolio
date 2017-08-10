@@ -1,6 +1,7 @@
 hideSVG("line");
 hideSVG("hammer");
 hideSVG("body");
+hideSVG("mouse");
 
 
 function hideSVG(elementID){
@@ -82,7 +83,6 @@ $("document").ready(function(){
       makeDotActive("introtext");
   });
   $("#abouttext").click(function(){
-      //animateSVG("hammer");
       hideInnerBG();
       swap("#experience");
       makeDotActive("abouttext");
@@ -91,6 +91,7 @@ $("document").ready(function(){
       hideInnerBG();
       swap("#projects");
       makeDotActive("experiencetext");
+      animateSVG("mouse");
   });
   $("#projectstext").click(function(){
       hideInnerBG();
@@ -100,6 +101,7 @@ $("document").ready(function(){
   $("#resumetext").click(function(){
       //retractSVG("hammer");
       retractSVG("body");
+      retractSVG("mouse");
       swap("#intro");
       $("#dyno").addClass("fading");
       setTimeout(function(){
