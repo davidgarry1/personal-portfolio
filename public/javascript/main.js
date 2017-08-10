@@ -90,10 +90,11 @@ $("document").ready(function(){
       makeDotActive("abouttext");
   });
   $("#experiencetext").click(function(){
+      animateSVG("mouse");
+      animateSVG("computer");
       hideInnerBG();
       swap("#projects");
       makeDotActive("experiencetext");
-      animateSVG("mouse");
   });
   $("#projectstext").click(function(){
       hideInnerBG();
