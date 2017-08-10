@@ -67,6 +67,7 @@ function preloadImage(e){
 }
 
 $("document").ready(function(){
+  makeDotActive("resumetext");
   $("#svgtitle").show();
   preloadImage("../estate.jpg");
   setTimeout(function(){
@@ -78,23 +79,23 @@ $("document").ready(function(){
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       hideInnerBG();
       swap("#about");
-      makeDotActive("resumetext");
+      makeDotActive("introtext");
   });
   $("#abouttext").click(function(){
-      makeDotActive("introtext");
       //animateSVG("hammer");
       hideInnerBG();
       swap("#experience");
+      makeDotActive("abouttext");
   });
   $("#experiencetext").click(function(){
       hideInnerBG();
       swap("#projects");
-      makeDotActive("abouttext");
+      makeDotActive("experiencetext");
   });
   $("#projectstext").click(function(){
       hideInnerBG();
       swap("#resume");
-      makeDotActive("experiencetext");
+      makeDotActive("projectstext");
   });
   $("#resumetext").click(function(){
       //retractSVG("hammer");
@@ -104,7 +105,7 @@ $("document").ready(function(){
       setTimeout(function(){
         $("#dyno").css("background-image","url(../estate.jpg)");
       }, 50);
-      makeDotActive("introtext");
+      makeDotActive("resumetext");
   });
 });
 
