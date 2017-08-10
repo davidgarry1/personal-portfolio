@@ -107,7 +107,7 @@ function swap(b){
     if(i==elems.length){
         elems[i].fadeOut(250, function() {
             $("#dyno").scrollTop(0);
-            $(b).fadeIn(250);
+            $(b).finish().fadeIn(250);
         });
     } else {
       elems[i].fadeOut(250);
