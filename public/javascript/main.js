@@ -27,7 +27,7 @@ function animateSVG(elementID){
   path.style.strokeDasharray = length + ' ' + length;
   path.style.strokeDashoffset = length;
   path.getBoundingClientRect();
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease-in-out';
+  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease';
   path.style.strokeDashoffset = '0';
 }
 
