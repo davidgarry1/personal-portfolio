@@ -1,5 +1,5 @@
-hideSVG("line");
 hideSVG("hammer");
+hideSVG("case");
 hideSVG("body");
 hideSVG("mouse");
 hideSVG("computer");
@@ -85,6 +85,7 @@ $("document").ready(function(){
   });
   $("#abouttext").click(function(){
       animateSVG("hammer");
+      animateSVG("case");
       hideInnerBG();
       swap("#experience");
       makeDotActive("abouttext");
@@ -106,6 +107,7 @@ $("document").ready(function(){
       retractSVG("computer");
       retractSVG("hammer");
       retractSVG("body");
+      retractSVG("case");
       swap("#intro");
       $("#dyno").addClass("fading");
       setTimeout(function(){
