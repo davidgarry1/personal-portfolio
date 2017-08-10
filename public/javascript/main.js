@@ -120,15 +120,12 @@ function hideInnerBG(){
   $("#dyno").css("background-color","white");
 }
 
-var kk = 0;
-function swap(b){
-  $(".inner-body section:not("+b+")").each(function() {
+function swap(e){
+  $(".inner-body section:not("+e+")").each(function() {
       $(this).fadeOut(250);
-      console.log(kk++);
   });
-  $(".inner-body section:not("+b+")").promise().done(function() {
+  $(".inner-body section:not("+e+")").promise().done(function() {
       $("#dyno").scrollTop(0);
-      $(b).fadeIn(250);
-      console.log("hi");
+      $(e).fadeIn(250);
   });
 }
