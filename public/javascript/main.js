@@ -33,7 +33,6 @@ function animateSVG(elementID){
 
 $('.scroll_item').on('click', function() {
     var elem = $('#'+$(this).data('page')).click();
-    $(this).addClass('scroll_item_active').siblings('.scroll_item_active').removeClass('scroll_item_active');
 });
 
 history.pushState({urlPath:'/'},"",'/');
@@ -79,8 +78,10 @@ $("document").ready(function(){
       $("#dg").attr("src","../dg.jpg"); //loaded a little beforehand
       hideInnerBG();
       swap("#about");
+      makeDotActive("resumetext");
   });
   $("#abouttext").click(function(){
+      makeDotActive("introtext");
       //animateSVG("hammer");
       hideInnerBG();
       swap("#experience");
@@ -88,10 +89,12 @@ $("document").ready(function(){
   $("#experiencetext").click(function(){
       hideInnerBG();
       swap("#projects");
+      makeDotActive("abouttext");
   });
   $("#projectstext").click(function(){
       hideInnerBG();
       swap("#resume");
+      makeDotActive("experiencetext");
   });
   $("#resumetext").click(function(){
       //retractSVG("hammer");
@@ -101,8 +104,14 @@ $("document").ready(function(){
       setTimeout(function(){
         $("#dyno").css("background-image","url(../estate.jpg)");
       }, 50);
+      makeDotActive("introtext");
   });
 });
+
+function makeDotActive(dotText){
+    var elem = $('#dot'+dotText);
+    elem.addClass('scroll_item_active').siblings('.scroll_item_active').removeClass('scroll_item_active');
+}
 
 function hideInnerBG(){
   $("#dyno").removeClass("fading");
