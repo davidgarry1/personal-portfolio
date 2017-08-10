@@ -21,24 +21,24 @@ body {
 .dots-div {
     position: fixed;
     bottom: calc(1% + 100px);
-    right: 30px;
+    right: 34px;
     z-index: 999;
 }
 .scroll_item {
     border: 3px solid #000;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
     cursor: pointer;
 }
 .scroll_item:hover{
-    background: #000;
+    background-color: rgba(0,0,0,0.8);
 }
 .scroll_item_active {
     border: 3px solid #000;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
+    width: 12px;
+    height: 12px;
+    margin: 6px;
     background-color: #000;
 }
 
