@@ -92,6 +92,8 @@ body {
     height: 100%;
     overflow: hidden;
     display: inline-block;
+    border: 2px solid black;
+    background-color: white;
 } 
 .section-center .projects-div .project-card .project-img-div .project-links, .project-title {
     width: 100%;
