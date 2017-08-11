@@ -106,8 +106,9 @@ body {
 }
 .section-center .projects-div .project-card .project-img-div {
     background-color: blue;
-    width: 100%;
-    height: 70%;
+    width: 96%;
+    height: 66%;
+    padding: 2%;
     display: inline-block;
 } 
 .section-center .projects-div .project-card .project-img-div .project-img {
