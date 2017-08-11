@@ -88,7 +88,29 @@ body {
     .margin-top {
         margin-top: 5em;
     }
+    .section-center .projects-div {
+        width = 90%;
+    }
+    .section-center .projects-div .project-card {
+        width: 33.3%;
+    }
 }
+
+.section-center .projects-div {
+    background-color: black;
+    width: 60%;
+}
+.section-center .projects-div .project-card {
+    background-color: red;
+    width: 33.3%;
+    padding: 5%;
+}
+.section-center .projects-div .project-card .project-img-div {
+    background-color: blue;
+    width: 100%;
+    height: 70%;
+} 
+
 .section-center iframe {
     height: 90%;
     width: 90%;
