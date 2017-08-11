@@ -100,24 +100,34 @@ body {
 }
 .section-center .projects-div .project-card {
     background-color: red;
-    height: 5em;
+    height: 5vh;
     width: 28%;
-    padding: 2.5%;
+    padding: 1%;
     display: inline-block;
     overflow: hidden;
 }
 .section-center .projects-div .project-card .project-img-div {
     background-color: blue;
     width: 96%;
-    height: 66%;
+    height: calc(96% - 2em);
     padding: 2%;
     display: inline-block;
+    overflow: hidden;
 } 
 .section-center .projects-div .project-card .project-img-div .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    display: inline-block;
+} 
+.section-center .projects-div .project-card .project-img-div .project-links, .project-title {
+    width: 100%;
+    font-size: 1em;
+    object-fit: cover;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: inline-block;
 } 
 .section-center iframe {
