@@ -91,9 +91,6 @@ body {
     .section-center .projects-div {
         width = 90%;
     }
-    .section-center .projects-div .project-card {
-        width: 33.3%;
-    }
 }
 
 .section-center .projects-div {
@@ -103,7 +100,7 @@ body {
 }
 .section-center .projects-div .project-card {
     background-color: red;
-    width: 33.3%;
+    width: 28.3%;
     padding: 5%;
     display: inline-block;
 }
