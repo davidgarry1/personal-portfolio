@@ -67,7 +67,7 @@ body {
     width: 65%;
     margin-left: 17.5%;
 }
-@media(max-width: 600px) {
+@media(max-width: 850px) {
     .dots-div {
         display: none;
     }
@@ -90,6 +90,12 @@ body {
     }
     .section-center .projects-div {
         width = 95%;
+    }
+    .section-center .projects-div .project-card {
+        width: 96%;
+        padding: 1%;
+        display: inline-block;
+        overflow: hidden;
     }
 }
 
