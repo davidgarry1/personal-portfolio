@@ -81,7 +81,7 @@ body {
 }
 .section-center .projects-div .project-card .project-img-div {
     width: 96%;
-    height: calc(96% - 2em);
+    height: calc(96% - 2.1em);
     max-height: 40vh;
     padding: 2%;
     display: inline-block;
@@ -132,6 +132,11 @@ body {
         display: inline-block;
         overflow: hidden;
     }
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .section-center iframe {
