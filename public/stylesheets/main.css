@@ -89,20 +89,22 @@ body {
         margin-top: 5em;
     }
     .section-center .projects-div {
-        width = 90%;
+        width = 95%;
     }
 }
 
 .section-center .projects-div {
     background-color: black;
-    width: 60%;
+    width: 70%;
     display: inline-block;
 }
 .section-center .projects-div .project-card {
     background-color: red;
+    height: 5em;
     width: 28%;
     padding: 2.5%;
     display: inline-block;
+    overflow: hidden;
 }
 .section-center .projects-div .project-card .project-img-div {
     background-color: blue;
@@ -118,7 +120,6 @@ body {
     overflow: hidden;
     display: inline-block;
 } 
-
 .section-center iframe {
     height: 90%;
     width: 90%;
