@@ -100,7 +100,6 @@ body {
 }
 .section-center .projects-div .project-card {
     background-color: red;
-    height: 5vh;
     width: 28%;
     padding: 1%;
     display: inline-block;
