@@ -73,6 +73,7 @@ $("document").ready(function(){
   $("#svgtitle").show();
   preloadImage("../estate.jpg");
   $("#dg").attr("src","../dg.jpg");
+  $("#introhead").attr("src","http://www-scf.usc.edu/~dgarry/img/headshot.jpg");
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
