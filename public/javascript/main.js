@@ -70,8 +70,6 @@ var version = detectIE();
 if(version != false) {
   $(".shape").addClass("altbrowser");
   $(".text").addClass("altbrowser");
-  $("path").addClass("animated");
-  $("path").addClass("fadeIn");
 }
 
 $("document").ready(function(){
