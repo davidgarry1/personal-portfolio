@@ -74,7 +74,9 @@ if(version != false) {
 
 $("document").ready(function(){
   makeDotActive("resumetext");
-  $("#svgtitle").show();
+  if(version != 10 && version != 11){
+    $("#svgtitle").show();
+  }
   preloadImage("../estate.jpg");
   $("#dg").attr("src","../dg.jpg");
   $("#introhead").attr("src","http://www-scf.usc.edu/~dgarry/img/headshot.jpg");
@@ -149,18 +151,21 @@ function detectIE() {
   var msie = ua.indexOf('MSIE ');
   if (msie > 0) {
     // IE 10 or older => return version number
-    return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    //return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    return 10;
   }
   var trident = ua.indexOf('Trident/');
   if (trident > 0) {
     // IE 11 => return version number
     var rv = ua.indexOf('rv:');
-    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    //return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    return 11;
   }
   var edge = ua.indexOf('Edge/');
   if (edge > 0) {
     // Edge (IE 12+) => return version number
-    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    //return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    return 12;
   }
   // other browser
   return false;
