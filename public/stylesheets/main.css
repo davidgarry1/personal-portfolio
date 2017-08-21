@@ -319,7 +319,7 @@ body {
     }
     100% {
         stroke: black;
-        stroke-dasharray: 760;
+        stroke-dasharray: 760 0;
         stroke-dashoffset: 0;
         stroke-width: 5px;
     }
