@@ -343,12 +343,12 @@ body {
 .svg-wrapper:hover .text.altbrowser {
     color: black;
     background-color: white;
-    border: 5px solid black;
 }
 .shape.altbrowser {
     background-color: black;
 }
 .text.altbrowser {
     background-color: black;
-    padding: 15px;
+    border: 4px solid black;
+    padding: 7px;
 }
