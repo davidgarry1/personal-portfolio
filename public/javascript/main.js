@@ -8,7 +8,7 @@ hideSVG("computer");
 function hideSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  path.style.transition = path.style.WebkitTransition ='none';
+  path.style.transition = path.style.WebkitTransition = path.style.MozTransition = path.style.OTransition = path.style.MSTransition = 'none';
   path.style.strokeDasharray = length + ' ' + length;
   path.style.strokeDashoffset = length;
 }
@@ -16,7 +16,7 @@ function hideSVG(elementID){
 function retractSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-out';
+  path.style.transition = path.style.WebkitTransition = path.style.MozTransition = path.style.OTransition = path.style.MSTransition = 'stroke-dashoffset 2s ease-out';
   path.style.strokeDasharray = length + ' ' + length;
   path.getBoundingClientRect();
   path.style.strokeDashoffset = length;
@@ -25,11 +25,11 @@ function retractSVG(elementID){
 function animateSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
-  path.style.transition = path.style.WebkitTransition ='none';
+  path.style.transition = path.style.WebkitTransition = path.style.MozTransition = path.style.OTransition = path.style.MSTransition = 'none';
   path.style.strokeDasharray = length + ' ' + length;
   path.style.strokeDashoffset = length;
   path.getBoundingClientRect();
-  path.style.transition = path.style.WebkitTransition ='stroke-dashoffset 10s ease';
+  path.style.transition = path.style.WebkitTransition = path.style.MozTransition = path.style.OTransition = path.style.MSTransition = 'stroke-dashoffset 10s ease';
   path.style.strokeDashoffset = '0';
 }
 
