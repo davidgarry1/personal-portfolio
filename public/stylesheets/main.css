@@ -81,9 +81,8 @@ body {
     overflow: hidden;
 }
 .section-center .projects-div .project-card .project-img-div {
-    width: 96%;
-    height: calc(96% - 2.1em);
-    max-height: 40vh;
+    width: 90%;
+    height: auto;
     padding: 2%;
     display: inline-block;
     overflow: hidden;
