@@ -4,7 +4,6 @@ hideSVG("body");
 hideSVG("mouse");
 hideSVG("computer");
 
-
 function hideSVG(elementID){
   var path = document.getElementById(elementID);
   var length = path.getTotalLength();
@@ -39,17 +38,16 @@ $('.scroll_item').on('click', function() {
 
 history.pushState({urlPath:'/'},"",'/');
 
-var div = document.getElementById('fadetitle'),
-    letters = div.textContent.split('');
+var div = document.getElementById('fadetitle');
+var letters = div.textContent.split('');
 
 while(div.hasChildNodes()) div.removeChild(div.firstChild);
 
 for(var i = 0; i < letters.length; i++) {
-  var letter = document.createElement('span'),
-      style = 'opacity ' + (Math.random() * 1) + 's linear';
+  var letter = document.createElement('span');
+  var style = 'opacity ' + (Math.random() * 1) + 's linear';
   letter.appendChild(document.createTextNode(letters[i]));
-    letter.style.WebKitTransition = letter.style.MozTransition =
-    letter.style.MSTransition = letter.style.OTransition = letter.style.transition = style;
+  letter.style.WebKitTransition = letter.style.MozTransition = letter.style.MSTransition = letter.style.OTransition = letter.style.transition = style;
   letter.style.opacity = 0;
   div.appendChild(letter);
 }
