@@ -333,9 +333,23 @@ body {
     -o-animation: 0.38s draw linear forwards;
     animation: 0.38s draw linear forwards;
     fill: white;
-    background-color: white;
 }
 .svg-wrapper:hover .text {
     color: black;
+}
+
+/* For IE, Edge, FireFox */
+.svg-wrapper:hover .shape.altbrowser {
     background-color: white;
+}
+.svg-wrapper:hover .text.altbrowser {
+    color: black;
+    background-color: white;
+}
+.shape.altbrowser {
+    background-color: black;
+}
+.text.altbrowser {
+    background-color: black;
+    padding: 15px;
 }
