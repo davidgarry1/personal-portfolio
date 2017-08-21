@@ -295,6 +295,7 @@ body {
     stroke-width: 0px;
     stroke: black;
     cursor: pointer;
+    background-color: black;
 }
 .hidden {
     display: none;
@@ -306,6 +307,7 @@ body {
     position: relative;
     top: -48px;
     cursor: pointer;
+    background-color: black;
 }
 .inner-body {
     margin: 15px;
@@ -331,7 +333,9 @@ body {
     -o-animation: 0.38s draw linear forwards;
     animation: 0.38s draw linear forwards;
     fill: white;
+    background-color: white;
 }
 .svg-wrapper:hover .text {
     color: black;
+    background-color: white;
 }
