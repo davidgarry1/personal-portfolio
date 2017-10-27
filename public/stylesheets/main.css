@@ -16,6 +16,10 @@ body {
     padding: 0px;
     overflow: hidden;
 }
+.live-update:hover {
+    font-style: italic;
+    opacity: 0.8;
+}
 .dots-div {
     position: fixed;
     bottom: calc(1% + 100px);
