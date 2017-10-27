@@ -73,25 +73,23 @@ if(version != false) {
 }
 
 function fillUnsplashStats(){
+  var views = "600,000+";
+  var viewsForMonth = "90,000+";
+  var downloads = "6,000+";
   $.getJSON("https://api.unsplash.com/users/davidgarry1/statistics?client_id=8172afeb14105037ff6de59034a618b8011808bc4c64ab348041daf2c25128f0", function(stats) {
-    var views = stats["views"]["total"];
-    var viewsForMonth = stats["views"]["historical"]["change"];
-    var downloads = stats["downloads"]["total"];
-    if(!views){
-      views = "600,000+";
-    } else {
+    views = stats["views"]["total"];
+    viewsForMonth = stats["views"]["historical"]["change"];
+    downloads = stats["downloads"]["total"];
+    if(views){
       views = numberWithCommas(views);
     }
-    if(!viewsForMonth){
-      viewsForMonth = "90,000+";
-    } else {
+    if(viewsForMonth){
       viewsForMonth = numberWithCommas(viewsForMonth);
     }
-    if(!downloads){
-      downloads = "6,000+"
-    } else {
+    if(downloads){
       downloads = numberWithCommas(downloads);
     }
+  }).complete(function() {
     $("#usplashviewnum").text(views);
     $("#usplashdownloadnum").text(downloads);
     $("#usplashviewmonthnum").text(viewsForMonth);
