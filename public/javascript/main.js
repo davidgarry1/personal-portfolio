@@ -72,6 +72,32 @@ if(version != false) {
   $(".text").addClass("altbrowser");
 }
 
+function fillUnsplashStats(){
+  $.getJSON("https://api.unsplash.com/users/davidgarry1/statistics?client_id=8172afeb14105037ff6de59034a618b8011808bc4c64ab348041daf2c25128f0", function(stats) {
+    var views = stats["views"]["total"];
+    var viewsForMonth = stats["views"]["historical"]["change"];
+    var downloads = stats["downloads"]["total"];
+    if(!views){
+      views = "600,000+";
+    } else {
+      views = numberWithCommas(views);
+    }
+    if(!viewsForMonth){
+      viewsForMonth = "90,000+";
+    } else {
+      viewsForMonth = numberWithCommas(viewsForMonth);
+    }
+    if(!downloads){
+      downloads = "6,000+"
+    } else {
+      downloads = numberWithCommas(downloads);
+    }
+    $("#usplashviewnum").text(views);
+    $("#usplashdownloadnum").text(downloads);
+    $("#usplashviewmonthnum").text(viewsForMonth);
+  });
+}
+
 $("document").ready(function(){
   makeDotActive("resumetext");
   if(version != 10 && version != 11){
@@ -83,6 +109,8 @@ $("document").ready(function(){
   setTimeout(function(){
          $("#dyno").css("background-image","url(../estate.jpg)");
   }, 1000);
+  
+  fillUnsplashStats();
   
   $("#introtext").click(function(){
       animateSVG("body");
